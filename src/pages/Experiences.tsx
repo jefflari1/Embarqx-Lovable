@@ -120,7 +120,7 @@ const concepts: ConceptSection[] = [
     whyMatters:
       "Wellness and consciousness concepts expand EmbarqX beyond entertainment into high-value transformational travel, attracting audiences seeking meaning, connection, and elevated environments that can support recurring premium experiences.",
     image: wellnessImg,
-    icon: Lotus,
+    icon: Flower2,
   },
   {
     eyebrow: "CULTURAL ENERGY AND COMMUNITY",
