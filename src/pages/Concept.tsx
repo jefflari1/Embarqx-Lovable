@@ -14,12 +14,14 @@ import {
   Target,
   Shield,
   Crown,
-  ChevronRight,
   ArrowRight,
 } from "lucide-react";
 
 import heroImg from "@/assets/concept-hero.jpg";
 import audienceImg from "@/assets/concept-audience.jpg";
+import platformImg from "@/assets/concept-platform.jpg";
+import valueImg from "@/assets/concept-value.jpg";
+import roadmapImg from "@/assets/concept-roadmap.jpg";
 import closingImg from "@/assets/concept-closing.jpg";
 
 const fadeUp = {
@@ -139,8 +141,11 @@ const Concept = () => (
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 The strongest premium travel experiences are no longer built around destination alone. They are increasingly shaped by identity, culture, community, access, and the quality of the experience itself.
               </p>
+              <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
+                Yet too many voyage ideas remain isolated activations rather than the foundation for something bigger. EmbarqX was created to build a more intentional model, one where strong concepts, premium hospitality, curated programming, and the right partnerships can come together as part of a platform designed to grow over time.
+              </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                EmbarqX exists to create premium themed voyages that bring those elements together in a way that is emotionally resonant, strategically aligned, and capable of growing beyond a single sailing.
+                This is not about creating a single memorable sailing. It is about building a premium experience platform capable of launching differentiated voyages with stronger audience resonance, broader commercial potential, and lasting platform value.
               </p>
             </motion.div>
             <motion.div {...fadeUp}>
@@ -175,7 +180,7 @@ const Concept = () => (
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
             {platformBlocks.map((b, i) => (
               <motion.div
                 key={b.title}
@@ -188,6 +193,17 @@ const Concept = () => (
               </motion.div>
             ))}
           </div>
+
+          <motion.div {...fadeUp} className="max-w-4xl mx-auto rounded-2xl overflow-hidden glow-gold">
+            <img
+              src={platformImg}
+              alt="Premium vessel at twilight"
+              loading="lazy"
+              className="w-full aspect-[21/9] object-cover"
+              width={1280}
+              height={720}
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -201,7 +217,7 @@ const Concept = () => (
             <h2 className="font-display text-3xl md:text-5xl font-bold !text-[hsl(212,60%,7%)]">
               How the platform comes together
             </h2>
-            <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed">
+            <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mt-6">
               EmbarqX brings together the core elements of a premium themed voyage into one aligned platform, transforming concepts into experiences with deeper audience connection and broader long-term value.
             </p>
           </motion.div>
@@ -232,31 +248,47 @@ const Concept = () => (
         style={{ background: 'linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(210 50% 14%) 50%, hsl(210 55% 11%) 100%)' }}
       >
         <div className="container mx-auto px-6">
-          <motion.div {...fadeUp} className="text-center mb-16 max-w-3xl mx-auto">
-            <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-              How value is created
-            </h2>
-            <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              EmbarqX is designed to create value through more than ticket sales alone.
-            </p>
-          </motion.div>
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <motion.div {...fadeUp}>
+              <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+                How value is created
+              </h2>
+              <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
+                EmbarqX is designed to create value through more than ticket sales alone.
+              </p>
 
-          <div className="max-w-3xl mx-auto space-y-4">
-            {valueLayers.map((layer, i) => (
-              <motion.div
-                key={layer.label}
-                {...stagger(i)}
-                className="gradient-card rounded-xl border border-border p-6 flex items-start gap-6"
-              >
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 border border-primary/20 shrink-0 mt-0.5">
-                  <span className="font-display text-sm font-bold text-primary">{i + 1}</span>
-                </div>
-                <div>
-                  <h3 className="font-display text-base font-semibold mb-1">{layer.label}</h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{layer.text}</p>
-                </div>
-              </motion.div>
-            ))}
+              <div className="space-y-4">
+                {valueLayers.map((layer, i) => (
+                  <motion.div
+                    key={layer.label}
+                    {...stagger(i)}
+                    className="gradient-card rounded-xl border border-border p-6 flex items-start gap-6"
+                  >
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 border border-primary/20 shrink-0 mt-0.5">
+                      <span className="font-display text-sm font-bold text-primary">{i + 1}</span>
+                    </div>
+                    <div>
+                      <h3 className="font-display text-base font-semibold mb-1">{layer.label}</h3>
+                      <p className="font-body text-sm text-muted-foreground leading-relaxed">{layer.text}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            <motion.div {...fadeUp} className="sticky top-32">
+              <div className="relative rounded-2xl overflow-hidden glow-gold">
+                <img
+                  src={valueImg}
+                  alt="Premium cruise lounge experience"
+                  loading="lazy"
+                  className="w-full aspect-[4/5] object-cover"
+                  width={1280}
+                  height={720}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -295,9 +327,13 @@ const Concept = () => (
 
       {/* ─── SECTION 7: FROM FLAGSHIP TO PLATFORM ─── */}
       <section
-        className="relative py-24 md:py-32"
+        className="relative py-24 md:py-32 overflow-hidden"
         style={{ background: 'linear-gradient(180deg, hsl(210 50% 17%) 0%, hsl(212 58% 9%) 50%, hsl(210 55% 10%) 100%)' }}
       >
+        <div className="absolute inset-0 opacity-[0.07]">
+          <img src={roadmapImg} alt="" className="w-full h-full object-cover" loading="lazy" aria-hidden="true" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(210_50%_17%)] via-transparent to-[hsl(210_55%_10%)]" />
         <div className="absolute bottom-0 left-1/3 w-[500px] h-[300px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.05),transparent_70%)]" />
         <div className="container mx-auto px-6 relative z-10">
           <motion.div {...fadeUp} className="text-center mb-16 max-w-3xl mx-auto">
