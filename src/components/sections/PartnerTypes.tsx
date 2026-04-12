@@ -1,42 +1,27 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Building2, Star, Megaphone, TrendingUp, Users } from "lucide-react";
+import { Building2, TrendingUp, Megaphone, Users } from "lucide-react";
 
 const partners = [
   {
-    icon: TrendingUp,
-    title: "Investors",
-    description: "Participate in a scalable themed cruise platform with multiple revenue streams and franchise potential.",
-    cta: "Explore Investment",
-    link: "/investors",
-  },
-  {
     icon: Building2,
     title: "Cruise Operators",
-    description: "Access premium themed programming that drives demand, elevates brand perception, and fills cabins at premium rates.",
-    cta: "Operator Partnerships",
-    link: "/partners",
+    description: "Expand into differentiated premium concepts, unlock new thematic spaces, and create stronger recurring voyage opportunities without having to originate the full vision internally.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Investors",
+    description: "Participate in a platform designed to create value through recurring themed voyages, strategic partnerships, and multiple monetization layers beyond ticket sales.",
   },
   {
     icon: Megaphone,
     title: "Sponsors & Brands",
-    description: "Reach captive, high-value audiences through immersive brand activations in an unforgettable environment.",
-    cta: "Sponsorship Opportunities",
-    link: "/partners",
-  },
-  {
-    icon: Star,
-    title: "Celebrity & Talent Partners",
-    description: "Create signature voyages that deepen fan connection, generate new revenue, and build lasting brand equity at sea.",
-    cta: "Talent Collaborations",
-    link: "/partners",
+    description: "Enter premium audience environments where cultural relevance, immersive programming, and identity-driven experiences create stronger activation potential.",
   },
   {
     icon: Users,
-    title: "Strategic Collaborators",
-    description: "Join the EmbarqX ecosystem to co-create, distribute, or enhance premium themed cruise experiences worldwide.",
-    cta: "Collaborate With Us",
-    link: "/contact",
+    title: "Talent & Strategic Collaborators",
+    description: "Translate influence, audience connection, and cultural relevance into premium themed experiences with long-term strategic value.",
   },
 ];
 
@@ -50,14 +35,17 @@ const PartnerTypes = () => (
         className="text-center mb-16"
       >
         <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
-          Who We Work With
+          Partnership Opportunities
         </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold">
-          Built for Strategic Partners
+        <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+          Every seat at this table is designed to win.
         </h2>
+        <p className="font-body text-lg text-[#B8C4D1] max-w-3xl mx-auto">
+          EmbarqX is designed to create value by aligning the right operators, investors, sponsors, and talent-side collaborators around premium voyage concepts with long-term platform potential.
+        </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {partners.map((p, i) => (
           <motion.div
             key={p.title}
@@ -69,18 +57,26 @@ const PartnerTypes = () => (
           >
             <p.icon className="w-8 h-8 text-gold mb-5" />
             <h3 className="font-display text-xl font-bold mb-3">{p.title}</h3>
-            <p className="font-body text-sm text-[#B8C4D1] leading-relaxed mb-6 flex-1">
+            <p className="font-body text-sm text-[#B8C4D1] leading-relaxed flex-1">
               {p.description}
             </p>
-            <Link
-              to={p.link}
-              className="font-body text-sm font-semibold text-gold hover:text-gold-warm transition-colors"
-            >
-              {p.cta} →
-            </Link>
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-center mt-12"
+      >
+        <Link
+          to="/partners"
+          className="font-body text-sm font-semibold text-gold hover:text-gold-warm transition-colors"
+        >
+          Explore the full partnership model →
+        </Link>
+      </motion.div>
     </div>
   </section>
 );
