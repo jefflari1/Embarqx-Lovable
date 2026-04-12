@@ -19,7 +19,7 @@ const pillars = [
 ];
 
 const VisionSection = () => (
-  <section id="vision" className="py-24 md:py-32 bg-card/40">
+  <section id="vision" className="py-24 md:py-32" style={{ background: 'linear-gradient(180deg, #0A1E35 0%, #0D2A47 50%, #0A1E35 100%)' }}>
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
