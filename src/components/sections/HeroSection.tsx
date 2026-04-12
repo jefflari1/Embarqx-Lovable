@@ -33,12 +33,12 @@ const HeroSection = () => (
           transition={{ delay: 0.3, duration: 0.8 }}
           className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-6"
         >
-          Premium Themed Cruise Experiences
+          Building the Next Generation of Themed Voyages
         </motion.p>
 
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8">
-          Where Themed Worlds{" "}
-          <span className="text-gradient-gold italic">Come to Sea</span>
+          Where culture, talent, and premium travel become{" "}
+          <span className="text-gradient-gold italic">scalable experiences at sea.</span>
         </h1>
 
         <motion.p
@@ -47,9 +47,9 @@ const HeroSection = () => (
           transition={{ delay: 0.6, duration: 0.8 }}
           className="font-body text-lg md:text-xl text-[#B8C4D1] max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          EmbarqX creates premium themed cruise concepts that unite culture,
-          celebrity, community, entertainment, luxury, and destination into
-          unforgettable voyages built for scale.
+          EmbarqX creates high-impact themed cruise concepts that bring together
+          talent, community, hospitality, and commercial strategy to launch
+          unforgettable voyages and scalable brand platforms.
         </motion.p>
 
         <motion.div
@@ -59,17 +59,37 @@ const HeroSection = () => (
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Link
-            to="/contact"
+            to="/concept"
             className="px-8 py-4 font-body font-semibold text-base rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all glow-gold"
           >
-            Start a Conversation
+            See the Vision
           </Link>
           <Link
-            to="/concept"
+            to="/partners"
             className="px-8 py-4 font-body font-semibold text-base rounded-full border border-border text-foreground hover:bg-muted transition-all"
           >
-            Explore the Platform
+            Partner With EmbarqX
           </Link>
+        </motion.div>
+
+        {/* Proof strip */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+          className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3"
+        >
+          {[
+            "Celebrity-led concepts",
+            "Operator-ready partnerships",
+            "Sponsor-integrated experiences",
+            "Repeatable platform economics",
+          ].map((item, i) => (
+            <span key={i} className="flex items-center gap-2 font-body text-sm tracking-wide text-[#B8C4D1]/80">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold/60" />
+              {item}
+            </span>
+          ))}
         </motion.div>
       </motion.div>
     </div>
