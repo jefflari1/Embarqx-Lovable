@@ -5,22 +5,25 @@ import diningImg from "@/assets/dining.jpg";
 
 const vessels = [
   {
-    title: "Flagship-Class Experiences",
-    description: "World-class vessels with 5,000+ guest capacity, featuring multi-deck entertainment complexes, premium dining, and theatrical production spaces.",
+    title: "Flagship Entertainment Class",
+    description: "These environments support high-capacity programming, premium hospitality layers, nightlife energy, and large-scale brand integration.",
+    bestFor: "Large-scale sports, music, and sponsor-driven activations with major audience energy and broad commercial potential.",
     image: flagshipImg,
-    specs: ["5,000+ Guests", "20+ Decks", "Full Production Theater"],
+    specs: ["Main theaters", "Pool decks", "Lounges", "Nightlife venues", "VIP areas"],
   },
   {
-    title: "Premium Entertainment Environments",
-    description: "Purpose-designed entertainment venues supporting world-class concerts, immersive performances, and multi-format programming.",
+    title: "Premium Intimacy Class",
+    description: "These environments create stronger intimacy, deeper connection, and more intentional experience design for premium niche audiences.",
+    bestFor: "High-touch wellness, personal growth, and curated community experiences where connection and atmosphere matter most.",
     image: theaterImg,
-    specs: ["1,500-Seat Theaters", "Nightclub Venues", "VIP Lounges"],
+    specs: ["Retreat-style decks", "Intimate lounges", "Wellness areas", "Dining environments"],
   },
   {
-    title: "Modern Social Environments",
-    description: "Sophisticated dining, social lounges, and lifestyle spaces designed for premium guest experiences and curated community connection.",
+    title: "Modern Social Class",
+    description: "These environments blend premium design, social movement, curated hospitality, and strong visual atmosphere into highly engaging voyage experiences.",
+    bestFor: "Design-forward premium audiences seeking nightlife, culture, dining, and immersive social energy with strong brand integration potential.",
     image: diningImg,
-    specs: ["Fine Dining", "Specialty Restaurants", "Premium Bars"],
+    specs: ["Restaurants", "Rooftop social zones", "Entertainment venues", "Lounges & bars"],
   },
 ];
 
@@ -37,10 +40,10 @@ const ShipsShowcase = () => (
           Illustrative Vessel Possibilities
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-          The Scale of What's Possible
+          The scale of what's possible at sea.
         </h2>
-        <p className="font-body text-[#8D9AA8] text-sm max-w-xl mx-auto">
-          Examples of the caliber and style of vessel environments that can support premium themed cruise programming.
+        <p className="font-body text-[#B8C4D1] text-base max-w-3xl mx-auto">
+          EmbarqX is designed for premium voyage environments capable of supporting immersive programming, differentiated hospitality, and high-value audience experiences at multiple levels of scale.
         </p>
       </motion.div>
 
@@ -74,8 +77,14 @@ const ShipsShowcase = () => (
                 {v.title}
               </h3>
               <p className="font-body text-[#B8C4D1] leading-relaxed">
+                <span className="text-gold font-semibold">Best for: </span>
+                {v.bestFor}
+              </p>
+              <p className="font-body text-[#B8C4D1] leading-relaxed">
+                <span className="text-gold font-semibold">Why it works: </span>
                 {v.description}
               </p>
+              <p className="font-body text-xs tracking-wide uppercase text-[#8D9AA8] mb-1">Key spaces:</p>
               <div className="flex flex-wrap gap-3">
                 {v.specs.map((s) => (
                   <span
