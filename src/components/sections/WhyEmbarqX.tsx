@@ -11,7 +11,7 @@ const reasons = [
 ];
 
 const WhyEmbarqX = () => (
-  <section className="py-24 border-t border-border">
+  <section className="py-24 border-t border-gold/20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -19,7 +19,7 @@ const WhyEmbarqX = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <p className="font-body text-sm tracking-[0.25em] uppercase text-primary mb-4">
+        <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
           Strategic Value
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold">
@@ -35,11 +35,11 @@ const WhyEmbarqX = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="p-6 rounded-xl border border-border hover:border-primary/20 transition-all duration-500 group"
+            className="p-6 rounded-xl border border-border hover:border-gold/20 transition-all duration-500 group"
           >
-            <r.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
+            <r.icon className="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform" />
             <h3 className="font-display text-lg font-bold mb-2">{r.title}</h3>
-            <p className="font-body text-sm text-muted-foreground leading-relaxed">
+            <p className="font-body text-sm text-[#B8C4D1] leading-relaxed">
               {r.description}
             </p>
           </motion.div>

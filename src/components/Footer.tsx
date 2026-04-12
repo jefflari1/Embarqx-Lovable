@@ -29,13 +29,13 @@ const footerLinks = [
 ];
 
 const Footer = () => (
-  <footer className="border-t border-border bg-navy-deep">
+  <footer className="border-t border-gold/20 bg-navy-deep">
     <div className="container mx-auto px-6 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div className="space-y-4">
           <Logo variant="footer" />
-          <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
+          <p className="text-[#8D9AA8] text-sm leading-relaxed max-w-xs">
             Premium themed cruise concepts that unite culture, celebrity, community,
             entertainment, luxury, and destination into unforgettable voyages built for scale.
           </p>
@@ -43,7 +43,7 @@ const Footer = () => (
 
         {footerLinks.map((group) => (
           <div key={group.title}>
-            <h4 className="font-body text-sm font-semibold tracking-widest uppercase text-foreground mb-4">
+            <h4 className="font-body text-sm font-semibold tracking-widest uppercase text-gold mb-4">
               {group.title}
             </h4>
             <div className="flex flex-col gap-2">
@@ -51,7 +51,7 @@ const Footer = () => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                  className="text-[#8D9AA8] text-sm hover:text-gold transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -61,11 +61,11 @@ const Footer = () => (
         ))}
       </div>
 
-      <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="text-muted-foreground text-xs">
+      <div className="mt-16 pt-8 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p className="text-[#8D9AA8] text-xs">
           © {new Date().getFullYear()} EmbarqX. All rights reserved.
         </p>
-        <p className="text-muted-foreground text-xs">
+        <p className="text-[#8D9AA8] text-xs">
           Premium Themed Cruise Experiences
         </p>
       </div>

@@ -17,7 +17,7 @@ const images = [
 ];
 
 const GalleryPreview = () => (
-  <section className="py-24 border-t border-border">
+  <section className="py-24 border-t border-gold/20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ const GalleryPreview = () => (
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <p className="font-body text-sm tracking-[0.25em] uppercase text-primary mb-4">
+        <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
           Atmosphere
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold">
@@ -61,7 +61,7 @@ const GalleryPreview = () => (
       <div className="text-center mt-10">
         <Link
           to="/gallery"
-          className="font-body text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
+          className="font-body text-sm font-semibold text-gold hover:text-gold-warm transition-colors"
         >
           View Full Gallery →
         </Link>

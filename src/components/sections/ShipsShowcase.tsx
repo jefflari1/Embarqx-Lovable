@@ -25,7 +25,7 @@ const vessels = [
 ];
 
 const ShipsShowcase = () => (
-  <section className="py-24">
+  <section className="py-24 bg-section-alt">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -33,13 +33,13 @@ const ShipsShowcase = () => (
         viewport={{ once: true }}
         className="text-center mb-4"
       >
-        <p className="font-body text-sm tracking-[0.25em] uppercase text-primary mb-4">
+        <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
           Illustrative Vessel Possibilities
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
           The Scale of What's Possible
         </h2>
-        <p className="font-body text-muted-foreground text-sm max-w-xl mx-auto">
+        <p className="font-body text-[#8D9AA8] text-sm max-w-xl mx-auto">
           Examples of the caliber and style of vessel environments that can support premium themed cruise programming.
         </p>
       </motion.div>
@@ -73,14 +73,14 @@ const ShipsShowcase = () => (
               <h3 className="font-display text-2xl md:text-3xl font-bold">
                 {v.title}
               </h3>
-              <p className="font-body text-muted-foreground leading-relaxed">
+              <p className="font-body text-[#B8C4D1] leading-relaxed">
                 {v.description}
               </p>
               <div className="flex flex-wrap gap-3">
                 {v.specs.map((s) => (
                   <span
                     key={s}
-                    className="px-4 py-2 text-xs font-body font-medium tracking-wide rounded-full border border-border text-muted-foreground"
+                    className="px-4 py-2 text-xs font-body font-medium tracking-wide rounded-full border border-gold/20 text-[#8D9AA8]"
                   >
                     {s}
                   </span>

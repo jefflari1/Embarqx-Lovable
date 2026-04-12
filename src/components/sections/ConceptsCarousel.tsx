@@ -53,7 +53,7 @@ const ConceptsCarousel = () => {
   const concept = concepts[current];
 
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="py-24 overflow-hidden border-t border-gold/20">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ const ConceptsCarousel = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-body text-sm tracking-[0.25em] uppercase text-primary mb-4">
+          <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
             Signature Concepts
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-bold">
@@ -97,15 +97,15 @@ const ConceptsCarousel = () => {
                 <h3 className="font-display text-3xl md:text-4xl font-bold">
                   {concept.title}
                 </h3>
-                <p className="font-body text-muted-foreground text-lg leading-relaxed">
+                <p className="font-body text-[#B8C4D1] text-lg leading-relaxed">
                   {concept.description}
                 </p>
                 <div className="space-y-3">
                   <div>
-                    <span className="font-body text-xs tracking-[0.2em] uppercase text-primary">
+                    <span className="font-body text-xs tracking-[0.2em] uppercase text-gold">
                       Target Audience
                     </span>
-                    <p className="font-body text-sm text-muted-foreground mt-1">
+                    <p className="font-body text-sm text-[#8D9AA8] mt-1">
                       {concept.audience}
                     </p>
                   </div>
@@ -113,7 +113,7 @@ const ConceptsCarousel = () => {
                     <span className="font-body text-xs tracking-[0.2em] uppercase text-gold">
                       Opportunity
                     </span>
-                    <p className="font-body text-sm text-muted-foreground mt-1">
+                    <p className="font-body text-sm text-[#8D9AA8] mt-1">
                       {concept.opportunity}
                     </p>
                   </div>
@@ -126,7 +126,7 @@ const ConceptsCarousel = () => {
           <div className="flex items-center justify-center gap-4 mt-10">
             <button
               onClick={prev}
-              className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-gold hover:text-gold transition-colors"
               aria-label="Previous concept"
             >
               <ChevronLeft size={20} />
@@ -137,7 +137,7 @@ const ConceptsCarousel = () => {
                   key={i}
                   onClick={() => setCurrent(i)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    i === current ? "bg-primary w-6" : "bg-border"
+                    i === current ? "bg-gold w-6" : "bg-border"
                   }`}
                   aria-label={`Go to concept ${i + 1}`}
                 />
@@ -145,7 +145,7 @@ const ConceptsCarousel = () => {
             </div>
             <button
               onClick={next}
-              className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-primary hover:text-primary transition-colors"
+              className="w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-gold hover:text-gold transition-colors"
               aria-label="Next concept"
             >
               <ChevronRight size={20} />
