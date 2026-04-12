@@ -195,7 +195,7 @@ const Experiences = () => (
     <Navbar />
     <main className="min-h-screen">
       {/* ─── SECTION 1: HERO ─── */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(212 60% 7%) 0%, hsl(210 50% 14%) 60%, hsl(207 40% 20%) 100%)' }}>
         <img
           src={heroImg}
           alt="Premium cruise atmosphere"
@@ -203,7 +203,8 @@ const Experiences = () => (
           width={1920}
           height={800}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-[hsl(207_40%_20%)]" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.06),transparent_70%)]" />
         <div className="relative z-10 container mx-auto px-6 pt-32 pb-24">
           <motion.div {...fadeUp} className="max-w-3xl">
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
@@ -234,7 +235,7 @@ const Experiences = () => (
       </section>
 
       {/* ─── SECTION 2: PORTFOLIO INTRO ─── */}
-      <section className="py-24 md:py-32 bg-section-alt">
+      <section className="relative py-24 md:py-32" style={{ background: 'linear-gradient(180deg, hsl(207 40% 20%) 0%, hsl(210 45% 22%) 50%, hsl(210 50% 17%) 100%)' }}>
         <div className="container mx-auto px-6">
           <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
@@ -264,107 +265,146 @@ const Experiences = () => (
       </section>
 
       {/* ─── SECTIONS 3-7: CONCEPT DEEP-DIVES ─── */}
-      {concepts.map((c, idx) => (
-        <section
-          key={c.title}
-          className={`py-24 md:py-32 ${idx % 2 === 0 ? "bg-navy-deep" : "bg-section-alt"}`}
-        >
-          <div className="container mx-auto px-6">
-            {/* Eyebrow + Title */}
-            <motion.div {...fadeUp} className="text-center mb-16">
-              <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-4">
-                {c.eyebrow}
-              </p>
-              <div className="flex items-center justify-center gap-4 mb-6">
-                <c.icon className="w-8 h-8 text-primary hidden md:block" />
-                <h2 className="font-display text-3xl md:text-5xl font-bold">{c.title}</h2>
+      {concepts.map((c, idx) => {
+        /* Each concept gets a unique background treatment */
+        const sectionStyles: Record<number, { className: string; style?: React.CSSProperties; innerOverlay?: React.ReactNode }> = {
+          0: {
+            /* Sports: rich deep navy with depth */
+            className: "relative py-24 md:py-32",
+            style: { background: 'linear-gradient(180deg, hsl(210 50% 17%) 0%, hsl(212 60% 9%) 40%, hsl(210 55% 11%) 100%)' },
+          },
+          1: {
+            /* Poker: darker, moodier blue */
+            className: "relative py-24 md:py-32",
+            style: { background: 'linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(215 55% 8%) 50%, hsl(210 50% 10%) 100%)' },
+          },
+          2: {
+            /* Wellness: warm editorial light panel */
+            className: "relative py-24 md:py-32",
+            style: { background: 'rgba(245, 241, 232, 0.94)' },
+          },
+          3: {
+            /* Music: rich slate-blue ocean gradient */
+            className: "relative py-24 md:py-32",
+            style: { background: 'linear-gradient(180deg, hsl(210 50% 14%) 0%, hsl(207 45% 18%) 50%, hsl(210 50% 14%) 100%)' },
+            innerOverlay: <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.04),transparent_70%)]" />,
+          },
+          4: {
+            /* Custom/Private: refined dark navy with subtle warmth */
+            className: "relative py-24 md:py-32",
+            style: { background: 'linear-gradient(180deg, hsl(210 50% 14%) 0%, hsl(212 58% 8%) 50%, hsl(210 55% 10%) 100%)' },
+            innerOverlay: <div className="absolute bottom-0 left-1/4 w-[500px] h-[300px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.05),transparent_70%)]" />,
+          },
+        };
+
+        const treatment = sectionStyles[idx] || sectionStyles[0];
+        const isLight = idx === 2;
+
+        return (
+          <section
+            key={c.title}
+            className={treatment.className}
+            style={treatment.style}
+          >
+            {treatment.innerOverlay}
+            <div className="container mx-auto px-6 relative z-10">
+              {/* Eyebrow + Title */}
+              <motion.div {...fadeUp} className="text-center mb-16">
+                <p className={`font-body text-xs tracking-[0.3em] uppercase mb-4 ${isLight ? 'text-[hsl(40,40%,45%)]' : 'text-primary'}`}>
+                  {c.eyebrow}
+                </p>
+                <div className="flex items-center justify-center gap-4 mb-6">
+                  <c.icon className={`w-8 h-8 hidden md:block ${isLight ? 'text-[hsl(40,40%,45%)]' : 'text-primary'}`} />
+                  <h2 className={`font-display text-3xl md:text-5xl font-bold ${isLight ? '!text-[hsl(212,60%,7%)]' : ''}`}>{c.title}</h2>
+                </div>
+              </motion.div>
+
+              {/* Image + Description */}
+              <div
+                className={`grid md:grid-cols-2 gap-12 items-center mb-20 ${
+                  c.reverse ? "md:[direction:rtl]" : ""
+                }`}
+              >
+                <motion.div
+                  {...fadeUp}
+                  className={c.reverse ? "md:[direction:ltr]" : ""}
+                >
+                  <div className={`relative rounded-2xl overflow-hidden ${isLight ? 'shadow-xl' : 'glow-gold'}`}>
+                    <img
+                      src={c.image}
+                      alt={c.title}
+                      loading="lazy"
+                      className="w-full aspect-[4/3] object-cover"
+                      width={1280}
+                      height={720}
+                    />
+                    <div className={`absolute inset-0 ${isLight ? 'bg-gradient-to-t from-[rgba(245,241,232,0.3)] to-transparent' : 'bg-gradient-to-t from-background/60 to-transparent'}`} />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  {...fadeUp}
+                  className={`space-y-6 ${c.reverse ? "md:[direction:ltr]" : ""}`}
+                >
+                  <p className={`font-body text-lg leading-relaxed ${isLight ? 'text-[hsl(212,30%,25%)]' : 'text-muted-foreground'}`}>
+                    {c.description}
+                  </p>
+                  <div className={`rounded-xl border p-6 space-y-4 ${isLight ? 'bg-white/60 border-[hsl(40,30%,80%)]' : 'gradient-card border-border'}`}>
+                    <div>
+                      <p className={`font-body text-xs tracking-[0.2em] uppercase mb-2 ${isLight ? 'text-[hsl(40,40%,45%)]' : 'text-primary'}`}>
+                        Target Audience
+                      </p>
+                      <p className={`font-body text-sm leading-relaxed ${isLight ? 'text-[hsl(212,25%,35%)]' : 'text-muted-foreground'}`}>
+                        {c.audience}
+                      </p>
+                    </div>
+                    <div className={`w-full h-px ${isLight ? 'bg-[hsl(40,30%,80%)]' : 'bg-border'}`} />
+                    <div>
+                      <p className={`font-body text-xs tracking-[0.2em] uppercase mb-2 ${isLight ? 'text-[hsl(40,40%,45%)]' : 'text-primary'}`}>
+                        Opportunity
+                      </p>
+                      <p className={`font-body text-sm leading-relaxed ${isLight ? 'text-[hsl(212,25%,35%)]' : 'text-muted-foreground'}`}>
+                        {c.opportunity}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
-            </motion.div>
 
-            {/* Image + Description */}
-            <div
-              className={`grid md:grid-cols-2 gap-12 items-center mb-20 ${
-                c.reverse ? "md:[direction:rtl]" : ""
-              }`}
-            >
-              <motion.div
-                {...fadeUp}
-                className={c.reverse ? "md:[direction:ltr]" : ""}
-              >
-                <div className="relative rounded-2xl overflow-hidden glow-gold">
-                  <img
-                    src={c.image}
-                    alt={c.title}
-                    loading="lazy"
-                    className="w-full aspect-[4/3] object-cover"
-                    width={1280}
-                    height={720}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
-                </div>
-              </motion.div>
+              {/* What this experience can include + Why it matters */}
+              <div className="grid md:grid-cols-2 gap-12">
+                <motion.div {...fadeUp}>
+                  <h3 className={`font-display text-xl md:text-2xl font-semibold mb-6 ${isLight ? '!text-[hsl(212,60%,7%)]' : ''}`}>
+                    What this experience can include
+                  </h3>
+                  <ul className="space-y-4">
+                    {c.includes.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <ChevronRight className={`w-4 h-4 mt-1 shrink-0 ${isLight ? 'text-[hsl(40,40%,45%)]' : 'text-primary'}`} />
+                        <span className={`font-body ${isLight ? 'text-[hsl(212,25%,35%)]' : 'text-muted-foreground'}`}>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
 
-              <motion.div
-                {...fadeUp}
-                className={`space-y-6 ${c.reverse ? "md:[direction:ltr]" : ""}`}
-              >
-                <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                  {c.description}
-                </p>
-                <div className="gradient-card rounded-xl border border-border p-6 space-y-4">
-                  <div>
-                    <p className="font-body text-xs tracking-[0.2em] uppercase text-primary mb-2">
-                      Target Audience
-                    </p>
-                    <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                      {c.audience}
-                    </p>
-                  </div>
-                  <div className="w-full h-px bg-border" />
-                  <div>
-                    <p className="font-body text-xs tracking-[0.2em] uppercase text-primary mb-2">
-                      Opportunity
-                    </p>
-                    <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                      {c.opportunity}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
+                <motion.div {...fadeUp}>
+                  <h3 className={`font-display text-xl md:text-2xl font-semibold mb-6 ${isLight ? '!text-[hsl(212,60%,7%)]' : ''}`}>
+                    Why it matters to the platform
+                  </h3>
+                  <p className={`font-body leading-relaxed ${isLight ? 'text-[hsl(212,25%,35%)]' : 'text-muted-foreground'}`}>
+                    {c.whyMatters}
+                  </p>
+                </motion.div>
+              </div>
             </div>
-
-            {/* What this experience can include + Why it matters */}
-            <div className="grid md:grid-cols-2 gap-12">
-              <motion.div {...fadeUp}>
-                <h3 className="font-display text-xl md:text-2xl font-semibold mb-6">
-                  What this experience can include
-                </h3>
-                <ul className="space-y-4">
-                  {c.includes.map((item) => (
-                    <li key={item} className="flex items-start gap-3">
-                      <ChevronRight className="w-4 h-4 text-primary mt-1 shrink-0" />
-                      <span className="font-body text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              <motion.div {...fadeUp}>
-                <h3 className="font-display text-xl md:text-2xl font-semibold mb-6">
-                  Why it matters to the platform
-                </h3>
-                <p className="font-body text-muted-foreground leading-relaxed">
-                  {c.whyMatters}
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        );
+      })}
 
       {/* ─── SECTION 8: WHY THE PORTFOLIO MATTERS ─── */}
-      <section className="py-24 md:py-32 bg-navy-deep">
-        <div className="container mx-auto px-6">
+      <section className="relative py-24 md:py-32" style={{ background: 'linear-gradient(180deg, hsl(210 55% 10%) 0%, hsl(207 45% 18%) 40%, hsl(210 45% 22%) 70%, hsl(210 50% 17%) 100%)' }}>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.04),transparent_70%)]" />
+        <div className="container mx-auto px-6 relative z-10">
           <motion.div {...fadeUp} className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
               Why this portfolio creates platform strength
@@ -396,17 +436,12 @@ const Experiences = () => (
       <section
         id="closing-cta"
         className="relative py-24 md:py-32 overflow-hidden"
+        style={{ background: 'linear-gradient(180deg, hsl(210 50% 17%) 0%, hsl(212 58% 10%) 40%, hsl(212 60% 7%) 100%)' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-[hsl(210_55%_12%)] to-background" />
-        <div className="absolute inset-0 opacity-10">
-          <img
-            src={heroImg}
-            alt=""
-            className="w-full h-full object-cover"
-            loading="lazy"
-            aria-hidden="true"
-          />
+        <div className="absolute inset-0">
+          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.07),transparent_60%)]" />
         </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
