@@ -5,16 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
 
 const navLinks = [
-  { label: "Home", path: "/" },
   { label: "The Concept", path: "/concept" },
   { label: "Experiences", path: "/experiences" },
   { label: "Partners", path: "/partners" },
   { label: "Investors", path: "/investors" },
   { label: "Ships & Venues", path: "/ships" },
-  { label: "Gallery", path: "/gallery" },
   { label: "About", path: "/about" },
-  { label: "FAQ", path: "/faq" },
-  { label: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -47,11 +43,12 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`px-3 py-2 text-sm font-body font-medium tracking-wide transition-colors duration-300 rounded-md ${
+              className={`px-2.5 py-2 font-body font-semibold tracking-wide transition-colors duration-300 rounded-md ${
                 location.pathname === link.path
                   ? "text-gold"
                   : "text-[#8D9AA8] hover:text-foreground"
               }`}
+              style={{ fontSize: '17px' }}
             >
               {link.label}
             </Link>
