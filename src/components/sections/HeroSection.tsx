@@ -58,12 +58,16 @@ const HeroSection = () => (
           transition={{ delay: 0.9, duration: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link
-            to="/concept"
+          <a
+            href="#vision"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("vision")?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="px-8 py-4 font-body font-semibold text-base rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all glow-gold"
           >
             See the Vision
-          </Link>
+          </a>
           <Link
             to="/partners"
             className="px-8 py-4 font-body font-semibold text-base rounded-full border border-border text-foreground hover:bg-muted transition-all"
