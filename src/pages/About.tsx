@@ -7,15 +7,15 @@ import {
   Sparkles,
   Handshake,
   TrendingUp,
-  Target,
-  Shield,
   ChevronRight,
 } from "lucide-react";
 
 import heroImg from "@/assets/about-hero.jpg";
-import lifestyleImg from "@/assets/about-lifestyle.jpg";
+import originsImg from "@/assets/about-origins.jpg";
 import visionImg from "@/assets/about-vision.jpg";
+import partnersImg from "@/assets/about-partners.jpg";
 import ambitionImg from "@/assets/about-ambition.jpg";
+import closingImg from "@/assets/about-closing.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -49,18 +49,20 @@ const About = () => (
     <main className="min-h-screen">
 
       {/* ─── SECTION 1: HERO ─── */}
-      <section
-        className="relative min-h-[90vh] flex items-center overflow-hidden"
-        style={{ background: 'linear-gradient(180deg, hsl(212 60% 7%) 0%, hsl(210 50% 14%) 60%, hsl(207 40% 20%) 100%)' }}
-      >
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <img
           src={heroImg}
-          alt="Premium vessel at sea"
+          alt="Refined ocean horizon with vessel silhouette at golden hour"
           className="absolute inset-0 w-full h-full object-cover"
           width={1920}
-          height={800}
+          height={768}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-[hsl(207_40%_22%)]" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(180deg, hsla(212,60%,7%,0.78) 0%, hsla(210,55%,10%,0.6) 40%, hsla(207,40%,22%,0.85) 100%)",
+          }}
+        />
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.06),transparent_70%)]" />
         <div className="relative z-10 container mx-auto px-6 pt-32 pb-24">
           <motion.div {...fadeUp} className="max-w-3xl">
@@ -91,10 +93,10 @@ const About = () => (
         </div>
       </section>
 
-      {/* ─── SECTION 2: WHY EMBARQX WAS CREATED ─── */}
+      {/* ─── SECTION 2: WHY EMBARQX WAS CREATED — lighter slate-blue ─── */}
       <section
         className="relative py-24 md:py-32"
-        style={{ background: 'linear-gradient(180deg, hsl(207 40% 22%) 0%, hsl(210 45% 20%) 50%, hsl(210 50% 17%) 100%)' }}
+        style={{ background: "linear-gradient(180deg, hsl(207 40% 22%) 0%, hsl(210 45% 20%) 50%, hsl(210 50% 17%) 100%)" }}
       >
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -115,12 +117,12 @@ const About = () => (
             <motion.div {...fadeUp}>
               <div className="relative rounded-2xl overflow-hidden glow-gold">
                 <img
-                  src={lifestyleImg}
-                  alt="Premium lifestyle and community"
+                  src={originsImg}
+                  alt="Premium cruise deck at dusk"
                   loading="lazy"
                   className="w-full aspect-[16/10] object-cover"
-                  width={1280}
-                  height={720}
+                  width={1024}
+                  height={768}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
               </div>
@@ -129,10 +131,10 @@ const About = () => (
         </div>
       </section>
 
-      {/* ─── SECTION 3: THE FOUNDER VISION ─── */}
+      {/* ─── SECTION 3: THE FOUNDER VISION — deep navy ─── */}
       <section
         className="relative py-24 md:py-32"
-        style={{ background: 'linear-gradient(180deg, hsl(210 50% 17%) 0%, hsl(212 60% 9%) 40%, hsl(210 55% 11%) 100%)' }}
+        style={{ background: "linear-gradient(180deg, hsl(210 50% 17%) 0%, hsl(212 60% 9%) 40%, hsl(210 55% 11%) 100%)" }}
       >
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -140,11 +142,11 @@ const About = () => (
               <div className="relative rounded-2xl overflow-hidden glow-gold">
                 <img
                   src={visionImg}
-                  alt="Ocean horizon at dawn"
+                  alt="Ship bridge at twilight with panoramic ocean view"
                   loading="lazy"
                   className="w-full aspect-[16/10] object-cover"
-                  width={1280}
-                  height={720}
+                  width={1024}
+                  height={768}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
               </div>
@@ -173,14 +175,14 @@ const About = () => (
       {/* ─── SECTION 4: WHAT EMBARQX BELIEVES (LIGHT PANEL) ─── */}
       <section
         className="relative py-24 md:py-32"
-        style={{ background: 'rgba(245, 241, 232, 0.94)' }}
+        style={{ background: "rgba(245, 241, 232, 0.94)" }}
       >
         <div className="container mx-auto px-6">
           <motion.div {...fadeUp} className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold !text-[hsl(212,60%,7%)]">
               What EmbarqX believes
             </h2>
-            <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed">
+            <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mt-4">
               The platform is built around a few core ideas that shape every concept, partnership, and experience.
             </p>
           </motion.div>
@@ -190,7 +192,7 @@ const About = () => (
               <motion.div
                 key={b.title}
                 {...stagger(i)}
-                className="bg-white/60 rounded-xl border border-[hsl(40,30%,80%)] p-8"
+                className="bg-white/60 rounded-xl border border-[hsl(40,30%,80%)] p-8 hover:border-[hsl(40,40%,55%)]/30 transition-all duration-500"
               >
                 <b.icon className="w-8 h-8 text-[hsl(40,40%,45%)] mb-5" />
                 <h3 className="font-display text-lg font-semibold !text-[hsl(212,60%,7%)] mb-3">{b.title}</h3>
@@ -201,14 +203,14 @@ const About = () => (
         </div>
       </section>
 
-      {/* ─── SECTION 5: HOW EMBARQX THINKS ABOUT PARTNERSHIPS ─── */}
+      {/* ─── SECTION 5: HOW EMBARQX THINKS ABOUT PARTNERSHIPS — slate-blue ─── */}
       <section
         className="relative py-24 md:py-32"
-        style={{ background: 'linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(210 50% 14%) 50%, hsl(210 55% 11%) 100%)' }}
+        style={{ background: "linear-gradient(180deg, hsl(210 50% 14%) 0%, hsl(207 45% 20%) 50%, hsl(210 50% 14%) 100%)" }}
       >
         <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.04),transparent_70%)]" />
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
                 How EmbarqX thinks about partnerships
@@ -222,27 +224,41 @@ const About = () => (
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
                 That is why EmbarqX places so much importance on strategic fit, selective alignment, and building with partners who see both the creative and commercial value of a premium platform approach.
               </p>
+
+              <div className="flex flex-wrap gap-3">
+                {partnerLenses.map((lens) => (
+                  <span
+                    key={lens}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full gradient-card border border-border font-body text-sm text-foreground"
+                  >
+                    <ChevronRight className="w-3.5 h-3.5 text-primary" />
+                    {lens}
+                  </span>
+                ))}
+              </div>
             </motion.div>
 
-            <motion.div {...fadeUp} className="flex flex-wrap gap-3">
-              {partnerLenses.map((lens, i) => (
-                <span
-                  key={lens}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full gradient-card border border-border font-body text-sm text-foreground"
-                >
-                  <ChevronRight className="w-3.5 h-3.5 text-primary" />
-                  {lens}
-                </span>
-              ))}
+            <motion.div {...fadeUp}>
+              <div className="relative rounded-2xl overflow-hidden glow-gold">
+                <img
+                  src={partnersImg}
+                  alt="Strategic partnership on premium vessel deck"
+                  loading="lazy"
+                  className="w-full aspect-[16/10] object-cover"
+                  width={1024}
+                  height={768}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* ─── SECTION 6: THE LONG-TERM AMBITION ─── */}
+      {/* ─── SECTION 6: THE LONG-TERM AMBITION — deep navy ─── */}
       <section
         className="relative py-24 md:py-32"
-        style={{ background: 'linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(207 45% 18%) 50%, hsl(210 50% 17%) 100%)' }}
+        style={{ background: "linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(207 45% 18%) 50%, hsl(210 50% 17%) 100%)" }}
       >
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -264,7 +280,7 @@ const About = () => (
               <div className="relative rounded-2xl overflow-hidden glow-gold">
                 <img
                   src={ambitionImg}
-                  alt="Premium cruise at twilight"
+                  alt="Aerial view of cruise ship sailing toward sunset"
                   loading="lazy"
                   className="w-full aspect-[16/10] object-cover"
                   width={1280}
@@ -278,12 +294,22 @@ const About = () => (
       </section>
 
       {/* ─── SECTION 7: CLOSING CTA ─── */}
-      <section
-        className="relative py-24 md:py-32 overflow-hidden"
-        style={{ background: 'linear-gradient(180deg, hsl(210 50% 17%) 0%, hsl(212 58% 10%) 40%, hsl(212 60% 7%) 100%)' }}
-      >
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <img
+          src={closingImg}
+          alt="Twilight ocean with vessel silhouette and warm glow"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          width={1920}
+          height={768}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(180deg, hsla(212,60%,7%,0.82) 0%, hsla(210,50%,14%,0.7) 50%, hsla(212,60%,7%,0.88) 100%)",
+          }}
+        />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.07),transparent_60%)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
@@ -299,12 +325,12 @@ const About = () => (
               >
                 Partner With EmbarqX
               </Link>
-              <a
-                href="mailto:info@embarqx.com"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
                 Discuss a Strategic Opportunity
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
