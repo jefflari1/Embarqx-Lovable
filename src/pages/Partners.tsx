@@ -164,14 +164,12 @@ const Partners = () => {
                 platform with deeper audience connection, broader commercial
                 potential, and long-term value.
               </p>
-              <button
-                onClick={() =>
-                  window.open("mailto:partners@embarqx.com", "_self")
-                }
+              <Link
+                to="/contact"
                 className="px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wide hover:bg-primary/90 transition-colors"
               >
                 Discuss Strategic Partnership
-              </button>
+              </Link>
             </motion.div>
           </div>
         </section>
