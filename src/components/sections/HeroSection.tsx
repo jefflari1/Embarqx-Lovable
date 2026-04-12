@@ -37,8 +37,8 @@ const HeroSection = () => (
         </motion.p>
 
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8">
-          Where culture, talent, and premium travel become{" "}
-          <span className="text-gradient-gold italic">scalable experiences at sea.</span>
+          Where Themed Worlds{" "}
+          <span className="text-gradient-gold italic">Come to Sea.</span>
         </h1>
 
         <motion.p
@@ -47,9 +47,9 @@ const HeroSection = () => (
           transition={{ delay: 0.6, duration: 0.8 }}
           className="font-body text-lg md:text-xl text-[#B8C4D1] max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          EmbarqX creates high-impact themed cruise concepts that bring together
-          talent, community, hospitality, and commercial strategy to launch
-          unforgettable voyages and scalable brand platforms.
+          EmbarqX creates high-impact themed cruise concepts that unite talent,
+          community, hospitality, and commercial strategy into premium voyages
+          built for long-term platform value.
         </motion.p>
 
         <motion.div
