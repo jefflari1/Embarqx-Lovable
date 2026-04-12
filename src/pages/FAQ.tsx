@@ -134,12 +134,12 @@ const FAQ = () => (
               >
                 Partner With EmbarqX
               </Link>
-              <a
-                href="mailto:info@embarqx.com"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
                 Discuss a Strategic Opportunity
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -212,12 +212,12 @@ const FAQ = () => (
               The best next step is a thoughtful conversation. EmbarqX is designed for the right partners, collaborators, and investors who are looking to build premium experiences with long-term strategic value.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="mailto:info@embarqx.com"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
                 Discuss a Strategic Opportunity
-              </a>
+              </Link>
               <Link
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
