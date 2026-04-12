@@ -8,12 +8,12 @@ import gamingImg from "@/assets/gaming.jpg";
 import theaterImg from "@/assets/theater.jpg";
 
 const images = [
-  { src: deckImg, alt: "Premium deck lounge atmosphere" },
-  { src: musicImg, alt: "Live music performance at sea" },
-  { src: diningImg, alt: "Fine dining experience" },
-  { src: wellnessImg, alt: "Wellness and spa environment" },
-  { src: gamingImg, alt: "Premium gaming venue" },
-  { src: theaterImg, alt: "Theater and entertainment" },
+  { src: deckImg, alt: "Arrival & Scale", label: "Arrival & Scale" },
+  { src: theaterImg, alt: "Performance & Spectacle", label: "Performance & Spectacle" },
+  { src: musicImg, alt: "Nightlife & Social Energy", label: "Nightlife & Social Energy" },
+  { src: diningImg, alt: "Dining & Hospitality", label: "Dining & Hospitality" },
+  { src: wellnessImg, alt: "Wellness & Reflection", label: "Wellness & Reflection" },
+  { src: gamingImg, alt: "VIP & Sponsor Environments", label: "VIP & Sponsor Environments" },
 ];
 
 const GalleryPreview = () => (
@@ -28,9 +28,12 @@ const GalleryPreview = () => (
         <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
           Atmosphere
         </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold">
-          A Glimpse of What Awaits
+        <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+          A glimpse of what awaits.
         </h2>
+        <p className="font-body text-[#B8C4D1] text-base max-w-3xl mx-auto">
+          From arrival and scale to nightlife, dining, performance, and elevated connection, EmbarqX is designed to create voyages that feel as memorable as the communities they bring together.
+        </p>
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
@@ -53,7 +56,10 @@ const GalleryPreview = () => (
               width={640}
               height={480}
             />
-            <div className="absolute inset-0 bg-background/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <span className="absolute bottom-3 left-3 font-body text-xs font-semibold tracking-wide text-white/90">
+              {img.label}
+            </span>
           </motion.div>
         ))}
       </div>
