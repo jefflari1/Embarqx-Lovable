@@ -11,11 +11,22 @@ import {
   Target,
   Sparkles,
   Shield,
-  Rocket,
   BarChart3,
   Crown,
   Anchor,
+  Music,
+  Dumbbell,
+  Gamepad2,
+  Trophy,
+  Palette,
 } from "lucide-react";
+
+import investorsHero from "@/assets/investors-hero.jpg";
+import investorsAudience from "@/assets/investors-audience.jpg";
+import investorsPlatform from "@/assets/investors-platform.jpg";
+import investorsValue from "@/assets/investors-value.jpg";
+import investorsRoadmap from "@/assets/investors-roadmap.jpg";
+import investorsClosing from "@/assets/investors-closing.jpg";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -92,11 +103,11 @@ const roadmapSteps = [
 ];
 
 const portfolioCategories = [
-  "Sports Legends at Sea",
-  "Poker & Gaming Voyages",
-  "Wellness & Consciousness Voyages",
-  "Music & Culture Voyages",
-  "Custom Brand & Private Voyages",
+  { label: "Sports Legends at Sea", icon: Trophy },
+  { label: "Poker & Gaming Voyages", icon: Gamepad2 },
+  { label: "Wellness & Consciousness Voyages", icon: Dumbbell },
+  { label: "Music & Culture Voyages", icon: Music },
+  { label: "Custom Brand & Private Voyages", icon: Palette },
 ];
 
 const backingBullets = [
@@ -118,17 +129,26 @@ const Investors = () => {
       <Navbar />
       <main className="min-h-screen">
         {/* ─── SECTION 1: HERO ─── */}
-        <section
-          className="relative pt-36 pb-28 md:pt-44 md:pb-36 overflow-hidden"
-          style={{
-            background: "linear-gradient(180deg, #061321 0%, #0D2A47 50%, #0A1E35 100%)",
-          }}
-        >
-          {/* Subtle radial glow */}
+        <section className="relative pt-36 pb-28 md:pt-44 md:pb-36 overflow-hidden">
+          {/* Background image */}
+          <img
+            src={investorsHero}
+            alt="Premium cruise vessel at twilight"
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={768}
+          />
+          {/* Overlay gradients */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "linear-gradient(180deg, hsla(212,60%,7%,0.82) 0%, hsla(210,55%,10%,0.7) 40%, hsla(212,60%,7%,0.88) 100%)",
+            }}
+          />
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: "radial-gradient(ellipse 70% 50% at 50% 60%, hsla(40,40%,55%,0.04) 0%, transparent 80%)",
+              background: "radial-gradient(ellipse 70% 50% at 50% 60%, hsla(40,40%,55%,0.06) 0%, transparent 80%)",
             }}
           />
           <div className="container mx-auto px-6 relative z-10">
@@ -147,29 +167,6 @@ const Investors = () => {
               <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto">
                 EmbarqX is building a premium themed cruise platform designed to turn flagship concepts into recurring experiences with differentiated positioning, multi-layer monetization, and long-term brand potential.
               </p>
-
-              {/* Hero visual placeholder */}
-              <div className="relative rounded-xl overflow-hidden border border-border/60 mb-14 aspect-[21/9] max-w-4xl mx-auto">
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background: "linear-gradient(135deg, #0D2A47 0%, #1B4266 40%, #0A1E35 70%, #061321 100%)",
-                  }}
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background: "radial-gradient(ellipse 60% 80% at 70% 60%, hsla(210,50%,30%,0.5) 0%, transparent 70%)",
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 h-1/3" style={{ background: "linear-gradient(0deg, hsla(212,60%,7%,0.7) 0%, transparent 100%)" }} />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="font-body text-xs tracking-[0.25em] uppercase text-muted-foreground/50">
-                    Cinematic visual — coming soon
-                  </p>
-                </div>
-              </div>
-
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={scrollToCTA}
@@ -202,18 +199,35 @@ const Investors = () => {
                 Travel is no longer only about destination. The strongest premium experiences are increasingly built around identity, culture, community, and curated access.
               </p>
             </motion.div>
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {whyNowBlocks.map((b, i) => (
-                <motion.div
-                  key={b.title}
-                  {...stagger(i)}
-                  className="gradient-card rounded-xl border border-border p-9 hover:border-primary/20 transition-all duration-500"
-                >
-                  <b.icon className="w-7 h-7 text-primary mb-5" />
-                  <h3 className="font-display text-lg font-bold mb-3 text-foreground">{b.title}</h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{b.text}</p>
-                </motion.div>
-              ))}
+
+            <div className="grid lg:grid-cols-5 gap-10 max-w-6xl mx-auto items-center">
+              {/* Cards */}
+              <div className="lg:col-span-3 grid md:grid-cols-3 lg:grid-cols-1 gap-6">
+                {whyNowBlocks.map((b, i) => (
+                  <motion.div
+                    key={b.title}
+                    {...stagger(i)}
+                    className="gradient-card rounded-xl border border-border p-8 hover:border-primary/20 transition-all duration-500"
+                  >
+                    <b.icon className="w-7 h-7 text-primary mb-4" />
+                    <h3 className="font-display text-lg font-bold mb-3 text-foreground">{b.title}</h3>
+                    <p className="font-body text-sm text-muted-foreground leading-relaxed">{b.text}</p>
+                  </motion.div>
+                ))}
+              </div>
+              {/* Image */}
+              <motion.div {...fadeUp} className="lg:col-span-2 hidden lg:block">
+                <div className="rounded-xl overflow-hidden border border-border/40">
+                  <img
+                    src={investorsAudience}
+                    alt="Premium audience enjoying a sunset deck event"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                    width={1024}
+                    height={768}
+                  />
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -224,73 +238,114 @@ const Investors = () => {
           style={{ background: "linear-gradient(180deg, hsl(212 60% 7%) 0%, hsl(210 55% 10%) 50%, hsl(212 60% 7%) 100%)" }}
         >
           <div className="container mx-auto px-6">
-            <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-6">
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                More than a single sailing. A platform.
-              </h2>
-              <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                EmbarqX is not built around one isolated event. It is designed as a premium concept platform capable of launching flagship voyages and expanding into a recurring portfolio of themed experiences over time.
-              </p>
-            </motion.div>
+            <div className="grid lg:grid-cols-2 gap-14 max-w-6xl mx-auto items-center">
+              {/* Image */}
+              <motion.div {...fadeUp}>
+                <div className="rounded-xl overflow-hidden border border-border/40">
+                  <img
+                    src={investorsPlatform}
+                    alt="Aerial view of premium cruise vessel at sea"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                    width={1024}
+                    height={768}
+                  />
+                </div>
+              </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-16">
-              {platformPillars.map((p, i) => (
-                <motion.div
-                  key={p.title}
-                  {...stagger(i)}
-                  className="gradient-card rounded-xl border border-border p-9 hover:border-primary/20 transition-all duration-500"
-                >
-                  <p.icon className="w-7 h-7 text-primary mb-5" />
-                  <h3 className="font-display text-lg font-bold mb-3 text-foreground">{p.title}</h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{p.text}</p>
+              {/* Content */}
+              <div>
+                <motion.div {...fadeUp} className="mb-10">
+                  <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                    More than a single sailing. A platform.
+                  </h2>
+                  <p className="font-body text-lg text-muted-foreground leading-relaxed">
+                    EmbarqX is not built around one isolated event. It is designed as a premium concept platform capable of launching flagship voyages and expanding into a recurring portfolio of themed experiences over time.
+                  </p>
                 </motion.div>
-              ))}
+
+                <div className="space-y-5">
+                  {platformPillars.map((p, i) => (
+                    <motion.div
+                      key={p.title}
+                      {...stagger(i)}
+                      className="flex items-start gap-5"
+                    >
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                        <p.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-display text-base font-bold mb-1.5 text-foreground">{p.title}</h3>
+                        <p className="font-body text-sm text-muted-foreground leading-relaxed">{p.text}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ─── SECTION 4: VALUE MODEL — slate-blue surface ─── */}
+        {/* ─── SECTION 4: VALUE MODEL — warm editorial light panel ─── */}
+        <section
+          className="py-24 md:py-32"
+          style={{ background: "rgba(245, 241, 232, 0.94)" }}
+        >
+          <div className="container mx-auto px-6">
+            <motion.div {...fadeUp} className="max-w-3xl mb-16">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 !text-[hsl(212,60%,7%)]">
+                A multi-layer value model
+              </h2>
+              <p className="font-body text-lg !text-[hsl(212,25%,35%)] leading-relaxed">
+                EmbarqX is designed to create value through more than ticket sales alone.
+              </p>
+            </motion.div>
+
+            <div className="grid lg:grid-cols-2 gap-12 max-w-6xl items-start">
+              {/* Left: value layers */}
+              <div className="space-y-4">
+                {valueLayers.map((layer, i) => (
+                  <motion.div
+                    key={layer.label}
+                    {...stagger(i)}
+                    className="bg-white/60 rounded-xl border border-[hsl(40,30%,80%)] p-7 flex items-start gap-5 hover:border-[hsl(40,40%,55%)]/30 transition-all duration-500"
+                  >
+                    <span className="font-display text-2xl font-bold text-[hsl(40,40%,45%)]/60 mt-0.5 shrink-0 w-8 text-right">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <h3 className="font-display text-base font-bold !text-[hsl(212,60%,7%)] mb-1.5">{layer.label}</h3>
+                      <p className="font-body text-sm !text-[hsl(212,25%,35%)] leading-relaxed">{layer.text}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Right: image */}
+              <motion.div {...fadeUp} className="hidden lg:block sticky top-32">
+                <div className="rounded-xl overflow-hidden border border-[hsl(40,30%,80%)] shadow-lg">
+                  <img
+                    src={investorsValue}
+                    alt="Premium hospitality lounge interior"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                    width={640}
+                    height={896}
+                  />
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* ─── SECTION 5: WHY EMBARQX STANDS APART — slate-blue surface ─── */}
         <section
           className="py-24 md:py-32"
           style={{ background: "linear-gradient(180deg, hsl(210 50% 14%) 0%, hsl(207 45% 20%) 50%, hsl(210 50% 14%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                A multi-layer value model
-              </h2>
-              <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                EmbarqX is designed to create value through more than ticket sales alone.
-              </p>
-            </motion.div>
-            <div className="max-w-2xl mx-auto space-y-4">
-              {valueLayers.map((layer, i) => (
-                <motion.div
-                  key={layer.label}
-                  {...stagger(i)}
-                  className="gradient-card rounded-xl border border-border p-7 flex items-start gap-5 hover:border-primary/20 transition-all duration-500"
-                >
-                  <span className="font-display text-2xl font-bold text-primary/70 mt-0.5 shrink-0 w-8 text-right">
-                    {i + 1}
-                  </span>
-                  <div>
-                    <h3 className="font-display text-base font-bold text-foreground mb-1.5">{layer.label}</h3>
-                    <p className="font-body text-sm text-muted-foreground leading-relaxed">{layer.text}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ─── SECTION 5: WHY EMBARQX STANDS APART — warm editorial light panel ─── */}
-        <section
-          className="py-24 md:py-32"
-          style={{ background: "rgba(245, 241, 232, 0.94)" }}
-        >
-          <div className="container mx-auto px-6">
-            <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="font-display text-3xl md:text-4xl font-bold !text-[hsl(212,60%,7%)]">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
                 Why EmbarqX stands apart
               </h2>
             </motion.div>
@@ -299,11 +354,11 @@ const Investors = () => {
                 <motion.div
                   key={item.title}
                   {...stagger(i)}
-                  className="bg-white/60 rounded-xl border border-[hsl(40,30%,80%)] p-8 hover:border-[hsl(40,40%,55%)]/30 transition-all duration-500"
+                  className="gradient-card rounded-xl border border-border p-8 hover:border-primary/20 transition-all duration-500"
                 >
-                  <item.icon className="w-6 h-6 text-[hsl(40,40%,45%)] mb-4" />
-                  <h3 className="font-display text-base font-bold mb-3 !text-[hsl(212,60%,7%)]">{item.title}</h3>
-                  <p className="font-body text-sm text-[hsl(212,25%,35%)] leading-relaxed">{item.text}</p>
+                  <item.icon className="w-6 h-6 text-primary mb-4" />
+                  <h3 className="font-display text-base font-bold mb-3 text-foreground">{item.title}</h3>
+                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{item.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -311,11 +366,10 @@ const Investors = () => {
         </section>
 
         {/* ─── SECTION 6: ROADMAP — deep navy with depth ─── */}
-        <section
-          className="py-24 md:py-32"
+        <section className="relative py-24 md:py-32 overflow-hidden"
           style={{ background: "linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(212 58% 9%) 50%, hsl(210 55% 11%) 100%)" }}
         >
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-6 relative z-10">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 From flagship concept to recurring platform
@@ -324,18 +378,31 @@ const Investors = () => {
                 A strong launch is only the beginning. The real value comes from the ability to turn successful concepts into repeatable premium experiences.
               </p>
             </motion.div>
-            <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-6">
+
+            {/* Roadmap image banner */}
+            <motion.div {...fadeUp} className="max-w-5xl mx-auto mb-14 rounded-xl overflow-hidden border border-border/40">
+              <img
+                src={investorsRoadmap}
+                alt="Cruise ship bow at dawn symbolizing forward momentum"
+                className="w-full h-48 md:h-64 object-cover"
+                loading="lazy"
+                width={1280}
+                height={512}
+              />
+            </motion.div>
+
+            <div className="max-w-4xl mx-auto grid md:grid-cols-4 gap-6">
               {roadmapSteps.map((s, i) => (
                 <motion.div
                   key={s.step}
                   {...stagger(i)}
-                  className="gradient-card rounded-xl border border-border p-8 hover:border-primary/20 transition-all duration-500 relative"
+                  className="gradient-card rounded-xl border border-border p-7 hover:border-primary/20 transition-all duration-500 relative"
                 >
-                  <span className="font-display text-3xl font-bold text-primary/30 absolute top-6 right-7">
+                  <span className="font-display text-3xl font-bold text-primary/25 absolute top-5 right-6">
                     {s.step}
                   </span>
-                  <h3 className="font-display text-base font-bold mb-3 text-foreground pr-10">{s.title}</h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{s.text}</p>
+                  <h3 className="font-display text-sm font-bold mb-3 text-foreground pr-8">{s.title}</h3>
+                  <p className="font-body text-xs text-muted-foreground leading-relaxed">{s.text}</p>
                 </motion.div>
               ))}
             </div>
@@ -356,14 +423,15 @@ const Investors = () => {
                 EmbarqX is designed to reduce dependence on a single audience or moment by building across multiple high-engagement thematic lanes.
               </p>
             </motion.div>
-            <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-10">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-5xl mx-auto mb-10">
               {portfolioCategories.map((cat, i) => (
                 <motion.div
-                  key={cat}
+                  key={cat.label}
                   {...stagger(i)}
-                  className="gradient-card rounded-lg border border-border px-7 py-5 hover:border-primary/20 transition-all duration-500"
+                  className="gradient-card rounded-xl border border-border p-6 text-center hover:border-primary/20 transition-all duration-500"
                 >
-                  <p className="font-display text-sm font-semibold text-foreground">{cat}</p>
+                  <cat.icon className="w-7 h-7 text-primary mx-auto mb-3" />
+                  <p className="font-display text-sm font-semibold text-foreground">{cat.label}</p>
                 </motion.div>
               ))}
             </div>
@@ -402,16 +470,30 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 9: INVESTOR CTA — dramatic slate with champagne glow ─── */}
+        {/* ─── SECTION 9: INVESTOR CTA — dramatic with closing visual ─── */}
         <section
           id="investor-cta"
           className="relative py-28 md:py-36 overflow-hidden"
-          style={{ background: "linear-gradient(180deg, #0D2A47 0%, #1B4266 50%, #0D2A47 100%)" }}
         >
+          {/* Background image */}
+          <img
+            src={investorsClosing}
+            alt="Twilight ocean horizon with vessel silhouette"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="lazy"
+            width={1920}
+            height={768}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "linear-gradient(180deg, hsla(212,60%,7%,0.8) 0%, hsla(210,50%,14%,0.7) 50%, hsla(212,60%,7%,0.85) 100%)",
+            }}
+          />
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: "radial-gradient(ellipse 60% 50% at 50% 55%, hsla(40,40%,55%,0.04) 0%, transparent 80%)",
+              background: "radial-gradient(ellipse 60% 50% at 50% 55%, hsla(40,40%,55%,0.06) 0%, transparent 80%)",
             }}
           />
           <div className="container mx-auto px-6 relative z-10">
@@ -423,18 +505,18 @@ const Investors = () => {
                 EmbarqX is designed for investors who understand the long-term opportunity in differentiated, identity-driven travel experiences and the value of building beyond one-time activations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                  onClick={() => window.open("mailto:investors@embarqx.com", "_self")}
-                  className="px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wide hover:bg-primary/90 transition-colors"
+                <Link
+                  to="/contact"
+                  className="px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wide hover:bg-primary/90 transition-colors text-center"
                 >
                   Discuss the Opportunity
-                </button>
-                <button
-                  onClick={() => window.open("mailto:investors@embarqx.com?subject=Strategic%20Conversation", "_self")}
-                  className="px-8 py-3.5 rounded-md border border-border text-foreground font-body font-semibold text-sm tracking-wide hover:bg-muted/40 transition-colors"
+                </Link>
+                <Link
+                  to="/contact"
+                  className="px-8 py-3.5 rounded-md border border-border text-foreground font-body font-semibold text-sm tracking-wide hover:bg-muted/40 transition-colors text-center"
                 >
                   Request a Strategic Conversation
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>
