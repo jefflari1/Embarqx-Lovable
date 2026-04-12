@@ -195,7 +195,7 @@ const Experiences = () => (
     <Navbar />
     <main className="min-h-screen">
       {/* ─── SECTION 1: HERO ─── */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden" style={{ background: 'linear-gradient(180deg, hsl(212 60% 7%) 0%, hsl(210 50% 14%) 60%, hsl(207 40% 20%) 100%)' }}>
         <img
           src={heroImg}
           alt="Premium cruise atmosphere"
