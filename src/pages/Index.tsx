@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import PositioningStrip from "@/components/sections/PositioningStrip";
+import VisionSection from "@/components/sections/VisionSection";
 import WhatWeCreate from "@/components/sections/WhatWeCreate";
 import ConceptsCarousel from "@/components/sections/ConceptsCarousel";
 import WhyEmbarqX from "@/components/sections/WhyEmbarqX";
@@ -17,6 +18,7 @@ const Index = () => (
     <main>
       <HeroSection />
       <PositioningStrip />
+      <VisionSection />
       <WhatWeCreate />
       <ConceptsCarousel />
       <WhyEmbarqX />
