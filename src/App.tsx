@@ -7,9 +7,9 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Partners from "./pages/Partners.tsx";
 import Investors from "./pages/Investors.tsx";
+import Experiences from "./pages/Experiences.tsx";
 import {
   ConceptPage,
-  ExperiencesPage,
   ShipsPage,
   GalleryPage,
   AboutPage,
