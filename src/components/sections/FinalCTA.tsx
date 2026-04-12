@@ -13,9 +13,9 @@ const FinalCTA = () => (
         width={1920}
         height={1080}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#061321] via-[#061321]/85 to-[#0D2A47]/70" />
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #061321 0%, #0D2A47 40%, #1B4266 70%, #0D2A47 100%)' }} />
       {/* Warm glow */}
-      <div className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-[#D7C08A]/[0.05] blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full bg-[#D7C08A]/[0.07] blur-[120px] pointer-events-none" />
     </div>
 
     <div className="relative z-10 container mx-auto px-6 text-center">
