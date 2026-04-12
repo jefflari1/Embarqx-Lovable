@@ -235,7 +235,7 @@ const Experiences = () => (
       </section>
 
       {/* ─── SECTION 2: PORTFOLIO INTRO ─── */}
-      <section className="py-24 md:py-32 bg-section-alt">
+      <section className="relative py-24 md:py-32" style={{ background: 'linear-gradient(180deg, hsl(207 40% 20%) 0%, hsl(210 45% 22%) 50%, hsl(210 50% 17%) 100%)' }}>
         <div className="container mx-auto px-6">
           <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
