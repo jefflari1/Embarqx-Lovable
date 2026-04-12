@@ -1,8 +1,7 @@
-import * as React from "react";
 import { Link } from "react-router-dom";
 import logoSrc from "@/assets/embarqx-logo.png";
 
-interface LogoProps extends React.HTMLAttributes<HTMLSpanElement> {
+interface LogoProps {
   variant?: "navbar" | "footer";
   linked?: boolean;
 }
@@ -12,25 +11,23 @@ const sizeClasses = {
   footer: "h-[34px] md:h-[38px]",
 };
 
-const Logo = React.forwardRef<HTMLSpanElement, LogoProps>(
-  ({ variant = "navbar", linked = true, className = "", ...props }, ref) => {
-    const img = (
-      <span ref={ref} className={`inline-flex items-center ${className}`.trim()} {...props}>
-        <img
-          src={logoSrc}
-          alt="EmbarqX logo"
-          className={`${sizeClasses[variant]} w-auto object-contain brightness-0 invert`}
-          draggable={false}
-        />
-      </span>
-    );
+function Logo({ variant = "navbar", linked = true }: LogoProps) {
+  const img = (
+    <img
+      src={logoSrc}
+      alt="EmbarqX logo"
+      className={`${sizeClasses[variant]} w-auto object-contain brightness-0 invert`}
+      draggable={false}
+    />
+  );
 
-    if (!linked) return img;
+  if (!linked) return img;
 
-    return <Link to="/">{img}</Link>;
-  },
-);
-
-Logo.displayName = "Logo";
+  return (
+    <Link to="/" className="inline-flex items-center">
+      {img}
+    </Link>
+  );
+}
 
 export default Logo;
