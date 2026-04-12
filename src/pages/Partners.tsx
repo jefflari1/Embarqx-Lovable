@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Building2, TrendingUp, Megaphone, Users } from "lucide-react";
 
 const partnerBlocks = [
@@ -73,18 +73,14 @@ const Partners = () => {
                 commercial potential over time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                  onClick={scrollToContact}
-                  className="px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wide hover:bg-primary/90 transition-colors"
+                <Link
+                  to="/contact"
+                  className="px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wide hover:bg-primary/90 transition-colors text-center"
                 >
                   Discuss Strategic Partnership
-                </button>
+                </Link>
                 <Link
-                  to="/#vision"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = "/#vision";
-                  }}
+                  to="/concept"
                   className="px-8 py-3.5 rounded-md border border-border text-foreground font-body font-semibold text-sm tracking-wide hover:bg-muted/40 transition-colors text-center"
                 >
                   See the Vision
@@ -168,14 +164,12 @@ const Partners = () => {
                 platform with deeper audience connection, broader commercial
                 potential, and long-term value.
               </p>
-              <button
-                onClick={() =>
-                  window.open("mailto:partners@embarqx.com", "_self")
-                }
+              <Link
+                to="/contact"
                 className="px-8 py-3.5 rounded-md bg-primary text-primary-foreground font-body font-semibold text-sm tracking-wide hover:bg-primary/90 transition-colors"
               >
                 Discuss Strategic Partnership
-              </button>
+              </Link>
             </motion.div>
           </div>
         </section>
