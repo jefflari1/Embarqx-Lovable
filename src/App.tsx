@@ -12,8 +12,8 @@ import Concept from "./pages/Concept.tsx";
 import About from "./pages/About.tsx";
 import FAQ from "./pages/FAQ.tsx";
 import Contact from "./pages/Contact.tsx";
+import Ships from "./pages/Ships.tsx";
 import {
-  ShipsPage,
   GalleryPage,
 } from "./pages/SubPages.tsx";
 
