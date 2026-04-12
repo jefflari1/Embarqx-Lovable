@@ -120,10 +120,6 @@ const backingBullets = [
 /* ── Page Component ── */
 
 const Investors = () => {
-  const scrollToCTA = () => {
-    document.getElementById("investor-cta")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
       <Navbar />
