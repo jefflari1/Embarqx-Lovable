@@ -217,12 +217,12 @@ const Experiences = () => (
               EmbarqX builds themed voyage concepts around strong audience identity, curated programming, and premium experience design — creating experiences that feel emotionally resonant, commercially differentiated, and scalable over time.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#closing-cta"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
                 Discuss a Concept
-              </a>
+              </Link>
               <Link
                 to="/concept"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
@@ -451,12 +451,12 @@ const Experiences = () => (
               EmbarqX is designed to turn differentiated premium concepts into experiences with stronger audience connection, broader commercial potential, and long-term platform value.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="mailto:info@embarqx.com"
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
                 Discuss a Concept
-              </a>
+              </Link>
               <Link
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
