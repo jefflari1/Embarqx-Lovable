@@ -6,19 +6,19 @@ const pillars = [
     icon: Sparkles,
     title: "Signature Experiences",
     description:
-      "Curated, emotionally rich themed voyages that merge culture, celebrity, entertainment, and luxury into immersive multi-day experiences at sea.",
+      "We originate themed voyage concepts designed to bring together audience identity, premium hospitality, curated programming, and unforgettable moments at sea.",
   },
   {
     icon: Handshake,
     title: "Strategic Partnerships",
     description:
-      "Collaborative frameworks connecting cruise operators, talent partners, sponsors, and brands into cohesive commercial ecosystems around each voyage.",
+      "We align the right operators, sponsors, talent-side collaborators, and strategic partners around concepts designed for audience growth, programming strength, and long-term platform expansion.",
   },
   {
     icon: TrendingUp,
     title: "Scalable Cruise IP",
     description:
-      "A repeatable platform model that transforms themed cruise concepts into franchisable intellectual property — designed from day one to scale.",
+      "Each concept is designed to become more than a single sailing, creating the foundation for recurring voyages, deeper brand equity, and broader long-term commercial value.",
   },
 ];
 
@@ -35,8 +35,11 @@ const WhatWeCreate = () => (
           The Platform
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold">
-          What We Create
+          How EmbarqX Creates Value
         </h2>
+        <p className="font-body text-[#B8C4D1] text-lg leading-relaxed max-w-3xl mx-auto mt-6">
+          EmbarqX creates value by developing premium voyage concepts that align select audiences, premium experiences, strategic partnerships, and long-term platform potential.
+        </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
