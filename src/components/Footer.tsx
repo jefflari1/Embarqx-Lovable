@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 const footerLinks = [
   {
@@ -33,10 +34,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <Link to="/" className="font-display text-2xl font-bold tracking-wider">
-            <span className="text-gradient-cyan">EMBARQ</span>
-            <span className="text-foreground">X</span>
-          </Link>
+          <Logo variant="footer" />
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
             Premium themed cruise concepts that unite culture, celebrity, community,
             entertainment, luxury, and destination into unforgettable voyages built for scale.
