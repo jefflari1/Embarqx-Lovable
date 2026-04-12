@@ -8,8 +8,8 @@ import NotFound from "./pages/NotFound.tsx";
 import Partners from "./pages/Partners.tsx";
 import Investors from "./pages/Investors.tsx";
 import Experiences from "./pages/Experiences.tsx";
+import Concept from "./pages/Concept.tsx";
 import {
-  ConceptPage,
   ShipsPage,
   GalleryPage,
   AboutPage,
@@ -27,7 +27,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/concept" element={<ConceptPage />} />
+          <Route path="/concept" element={<Concept />} />
           <Route path="/experiences" element={<Experiences />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/investors" element={<Investors />} />
