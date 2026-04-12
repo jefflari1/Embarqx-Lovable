@@ -9,7 +9,7 @@ import {
   Repeat,
   Trophy,
   Dices,
-  Lotus,
+  Flower2,
   Music,
   Crown,
   Globe,
