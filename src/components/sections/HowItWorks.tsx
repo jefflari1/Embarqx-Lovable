@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 
 const elements = [
-  { label: "Audience", color: "text-primary" },
-  { label: "Talent", color: "text-gold" },
-  { label: "Operator", color: "text-primary" },
-  { label: "Sponsor", color: "text-gold" },
-  { label: "Destination", color: "text-primary" },
-  { label: "Programming", color: "text-gold" },
+  { label: "Audience", color: "text-gold" },
+  { label: "Talent", color: "text-gold-warm" },
+  { label: "Operator", color: "text-gold" },
+  { label: "Sponsor", color: "text-gold-warm" },
+  { label: "Destination", color: "text-gold" },
+  { label: "Programming", color: "text-gold-warm" },
 ];
 
 const HowItWorks = () => (
-  <section className="py-24">
+  <section className="py-24 bg-section-alt">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -18,7 +18,7 @@ const HowItWorks = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <p className="font-body text-sm tracking-[0.25em] uppercase text-primary mb-4">
+        <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
           The Framework
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold">
@@ -48,17 +48,17 @@ const HowItWorks = () => (
                   </span>
                 </motion.div>
                 {i < elements.length - 1 && (
-                  <span className="text-muted-foreground text-xl font-light">+</span>
+                  <span className="text-[#8D9AA8] text-xl font-light">+</span>
                 )}
               </div>
             ))}
           </div>
           <div className="flex items-center justify-center my-8">
-            <div className="w-px h-12 bg-gradient-to-b from-primary/50 to-gold/50" />
+            <div className="w-px h-12 bg-gradient-to-b from-gold/50 to-gold-soft/50" />
           </div>
           <div className="text-center">
-            <div className="inline-block px-8 py-4 rounded-xl border border-primary/30 glow-cyan">
-              <p className="font-display text-xl md:text-2xl font-bold text-gradient-cyan">
+            <div className="inline-block px-8 py-4 rounded-xl border border-gold/30 glow-gold">
+              <p className="font-display text-xl md:text-2xl font-bold text-gradient-gold">
                 Premium Themed Voyage Platform
               </p>
             </div>

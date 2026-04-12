@@ -41,7 +41,7 @@ const partners = [
 ];
 
 const PartnerTypes = () => (
-  <section className="py-24 border-t border-border">
+  <section className="py-24 border-t border-gold/20">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -65,18 +65,16 @@ const PartnerTypes = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className={`gradient-card rounded-xl p-8 border border-border hover:border-gold/30 transition-all duration-500 group flex flex-col ${
-              i >= 3 ? "lg:col-span-1" : ""
-            }`}
+            className="gradient-card rounded-xl p-8 border border-border hover:border-gold/20 transition-all duration-500 group flex flex-col"
           >
             <p.icon className="w-8 h-8 text-gold mb-5" />
             <h3 className="font-display text-xl font-bold mb-3">{p.title}</h3>
-            <p className="font-body text-sm text-muted-foreground leading-relaxed mb-6 flex-1">
+            <p className="font-body text-sm text-[#B8C4D1] leading-relaxed mb-6 flex-1">
               {p.description}
             </p>
             <Link
               to={p.link}
-              className="font-body text-sm font-semibold text-gold hover:text-gold/80 transition-colors"
+              className="font-body text-sm font-semibold text-gold hover:text-gold-warm transition-colors"
             >
               {p.cta} →
             </Link>

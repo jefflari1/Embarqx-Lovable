@@ -13,7 +13,9 @@ const FinalCTA = () => (
         width={1920}
         height={1080}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/60" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#061321] via-[#061321]/85 to-[#0D2A47]/70" />
+      {/* Warm glow */}
+      <div className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-[#D7C08A]/[0.05] blur-[100px] pointer-events-none" />
     </div>
 
     <div className="relative z-10 container mx-auto px-6 text-center">
@@ -29,9 +31,9 @@ const FinalCTA = () => (
         </p>
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Let's Build the Next{" "}
-          <span className="italic text-gradient-cyan">Iconic Voyage</span>
+          <span className="italic text-gradient-gold">Iconic Voyage</span>
         </h2>
-        <p className="font-body text-lg text-muted-foreground mb-10 leading-relaxed">
+        <p className="font-body text-lg text-[#B8C4D1] mb-10 leading-relaxed">
           Whether you're an investor, operator, sponsor, talent partner, or
           strategic collaborator — we'd love to start a conversation about
           what's possible.
@@ -39,7 +41,7 @@ const FinalCTA = () => (
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             to="/contact"
-            className="px-8 py-4 font-body font-semibold text-base rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all glow-cyan"
+            className="px-8 py-4 font-body font-semibold text-base rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all glow-gold"
           >
             Start a Conversation
           </Link>

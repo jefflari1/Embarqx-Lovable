@@ -13,8 +13,10 @@ const HeroSection = () => (
         width={1920}
         height={1080}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#061321]/85 via-[#0D2A47]/60 to-[#061321]" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#061321]/70 to-transparent" />
+      {/* Warm champagne glow */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full bg-[#D7C08A]/[0.04] blur-[120px] pointer-events-none" />
     </div>
 
     {/* Content */}
@@ -29,21 +31,21 @@ const HeroSection = () => (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6"
+          className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-6"
         >
           Premium Themed Cruise Experiences
         </motion.p>
 
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8">
           Where Themed Worlds{" "}
-          <span className="text-gradient-cyan italic">Come to Sea</span>
+          <span className="text-gradient-gold italic">Come to Sea</span>
         </h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="font-body text-lg md:text-xl text-[#B8C4D1] max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           EmbarqX creates premium themed cruise concepts that unite culture,
           celebrity, community, entertainment, luxury, and destination into
@@ -58,7 +60,7 @@ const HeroSection = () => (
         >
           <Link
             to="/contact"
-            className="px-8 py-4 font-body font-semibold text-base rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all glow-cyan"
+            className="px-8 py-4 font-body font-semibold text-base rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-all glow-gold"
           >
             Start a Conversation
           </Link>
