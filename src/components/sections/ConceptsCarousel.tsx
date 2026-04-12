@@ -9,42 +9,41 @@ import deckImg from "@/assets/deck-nightlife.jpg";
 
 const concepts = [
   {
-    title: "Music & Culture Voyages",
-    description: "Immersive multi-day music experiences featuring world-class artists, cultural programming, and premium nightlife — all set against the backdrop of the open ocean.",
-    audience: "Music enthusiasts, culture seekers, premium lifestyle audiences",
-    opportunity: "Sponsorship, talent partnerships, media rights, exclusive memberships",
-    image: musicImg,
+    title: "Sports Legends at Sea",
+    description: "Centered around iconic athletes, immersive fan engagement, and curated access, these voyages are designed to create premium experiences that blend entertainment, community, and high-value sponsorship potential.",
+    audience: "Global sports fans, athlete-driven communities, and premium travelers seeking immersive access and shared passion at sea.",
+    opportunity: "Create premium sports experiences that combine immersive fan engagement, sponsorship potential, and strong emotional demand around iconic athletes and shared passion.",
+    image: theaterImg,
   },
   {
     title: "Poker & Gaming Voyages",
-    description: "High-stakes poker tournaments and premium gaming environments at sea, blending competitive excitement with luxury hospitality and VIP entertainment.",
-    audience: "High-net-worth players, gaming enthusiasts, luxury seekers",
-    opportunity: "Gaming partnerships, VIP memberships, broadcast & media",
+    description: "Built around tournament-driven experiences, premium social gaming environments, competition, and premium hospitality, these voyages create immersive settings where gaming, entertainment, and community come together in a distinctive experience at sea.",
+    audience: "Gaming communities, competitive players, and premium travelers drawn to tournament-driven experiences, social energy, and elevated hospitality.",
+    opportunity: "Unlock differentiated demand through tournament-driven experiences, premium social gaming, and sponsor-ready environments with strong community appeal.",
     image: gamingImg,
   },
   {
     title: "Wellness & Consciousness Voyages",
-    description: "Transformative journeys combining world-renowned wellness practitioners, holistic programming, and serene ocean environments for deep restoration.",
-    audience: "Wellness-focused professionals, mindfulness communities",
-    opportunity: "Wellness brands, retreat partnerships, premium lifestyle sponsors",
+    description: "Designed around mindfulness, personal growth, spirituality, and transformative programming, these voyages create premium environments for reflection, deeper connection, and elevated experience.",
+    audience: "Travelers seeking mindfulness, personal growth, spirituality, and premium environments for reflection, renewal, and deeper connection.",
+    opportunity: "Build voyages centered on reflection, personal growth, spirituality, and premium hospitality, creating differentiated experiences with strong audience affinity and platform potential.",
     image: wellnessImg,
   },
   {
-    title: "Sports Icon Voyages",
-    description: "Premium voyages anchored by legendary athletes and sporting icons, combining meet-and-greet experiences, sporting clinics, and luxury entertainment.",
-    audience: "Sports fans, collectors, corporate hospitality buyers",
-    opportunity: "Athlete partnerships, sports media, brand activations",
-    image: theaterImg,
+    title: "Music & Culture Voyages",
+    description: "Built around artists, cultural energy, and community-driven programming, these voyages create premium experiences that feel immersive, social, and highly resonant for the audiences they serve.",
+    audience: "Music-driven audiences, culturally connected communities, and travelers drawn to premium shared experiences.",
+    opportunity: "Build premium music and culture experiences that generate emotional demand, attract sponsorship interest, and create broader commercial value through programming and repeat audience appeal.",
+    image: musicImg,
   },
   {
-    title: "Brand-Led Private Charters",
-    description: "Fully bespoke private charter concepts designed for luxury brands, corporate experiences, and exclusive communities seeking unmatched exclusivity at sea.",
-    audience: "Luxury brands, corporate leadership, exclusive communities",
-    opportunity: "Full charter revenue, brand licensing, co-creation",
+    title: "Custom Brand & Private Voyages",
+    description: "These concepts are built for brands, sponsors, private groups, and invitation-only communities seeking custom voyages with premium hospitality, distinctive programming, and a more exclusive experience.",
+    audience: "Brands, sponsors, private groups, and invitation-only communities seeking custom voyages that combine exclusivity, premium programming, and high-touch hospitality.",
+    opportunity: "Unlock opportunities for branded activations, private community experiences, and sponsor-led voyages through custom programming, exclusivity, and premium hospitality.",
     image: deckImg,
   },
 ];
-
 const ConceptsCarousel = () => {
   const [current, setCurrent] = useState(0);
 
@@ -65,8 +64,14 @@ const ConceptsCarousel = () => {
             Signature Concepts
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-bold">
-            Voyages Designed to Captivate
+            Signature Concepts
           </h2>
+          <p className="font-body text-[#B8C4D1] text-lg leading-relaxed max-w-3xl mx-auto mt-6">
+            Each EmbarqX concept is built around a specific audience, a clear thematic identity, and the kind of programming that can turn a voyage into something people deeply connect with.
+          </p>
+          <p className="font-body text-[#8D9AA8] text-base leading-relaxed max-w-3xl mx-auto mt-3">
+            Each concept is designed to connect with a specific audience and create experiences that carry stronger emotional demand and broader commercial upside.
+          </p>
         </motion.div>
 
         <div className="relative">
