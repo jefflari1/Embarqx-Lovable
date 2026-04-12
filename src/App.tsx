@@ -10,10 +10,10 @@ import Investors from "./pages/Investors.tsx";
 import Experiences from "./pages/Experiences.tsx";
 import Concept from "./pages/Concept.tsx";
 import About from "./pages/About.tsx";
+import FAQ from "./pages/FAQ.tsx";
 import {
   ShipsPage,
   GalleryPage,
-  FAQPage,
   ContactPage,
 } from "./pages/SubPages.tsx";
 
@@ -34,7 +34,7 @@ const App = () => (
           <Route path="/ships" element={<ShipsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/about" element={<About />} />
-          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
