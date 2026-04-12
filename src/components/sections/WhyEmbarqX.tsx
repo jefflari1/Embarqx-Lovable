@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Globe, Users, Layers, Award, Zap, Shield } from "lucide-react";
 
 const reasons = [
-  { icon: Globe, title: "Global Reach", description: "Themed voyages that attract international audiences and unlock premium markets worldwide." },
-  { icon: Users, title: "Community-Driven", description: "Built-in audience engagement through passion communities that drive demand and repeat participation." },
-  { icon: Layers, title: "Platform Model", description: "Scalable IP architecture that transforms each concept into a repeatable, licensable franchise." },
-  { icon: Award, title: "Premium Positioning", description: "Every touchpoint designed to signal exclusivity, quality, and strategic sophistication." },
-  { icon: Zap, title: "Commercial Engine", description: "Multiple revenue streams — ticketing, sponsorship, media, licensing, merchandise, hospitality." },
-  { icon: Shield, title: "Partner-Ready", description: "Structured for operators, sponsors, talent, and investors to participate with clarity and confidence." },
+  { icon: Globe, title: "Audience-Led Demand", description: "EmbarqX is designed around communities with strong identity, emotional pull, and the potential to create premium demand beyond generic cruise marketing." },
+  { icon: Users, title: "Identity-Driven Experiences", description: "The strongest voyages are built around experiences people identify with, not just attend, creating deeper engagement and stronger long-term value." },
+  { icon: Layers, title: "A Platform, Not a One-Off", description: "EmbarqX is structured to turn flagship activations into recurring voyage concepts with broader portfolio potential over time." },
+  { icon: Award, title: "Differentiated Premium Positioning", description: "By combining talent, concept, programming, and audience relevance, EmbarqX creates premium voyages that stand apart from standard themed travel offers." },
+  { icon: Zap, title: "Multi-Layer Value Creation", description: "Each concept is designed to create value through premium ticketing, partnerships, sponsorship, programming, repeat launches, and broader platform upside." },
+  { icon: Shield, title: "Built for the Right Partners", description: "EmbarqX is designed to align the right operators, investors, sponsors, and talent-side collaborators around concepts with lasting strategic value." },
 ];
 
 const WhyEmbarqX = () => (
@@ -25,6 +25,9 @@ const WhyEmbarqX = () => (
         <h2 className="font-display text-3xl md:text-5xl font-bold" style={{ color: '#0B1E33' }}>
           Why EmbarqX
         </h2>
+        <p className="font-body text-base md:text-lg text-[#3A5068] max-w-3xl mx-auto mt-6 leading-relaxed">
+          EmbarqX is designed to turn strong concepts into premium voyages with deeper audience resonance, differentiated positioning, broader commercial potential, and a more scalable long-term platform.
+        </p>
       </motion.div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
