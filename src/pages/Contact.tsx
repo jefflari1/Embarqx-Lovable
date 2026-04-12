@@ -30,12 +30,12 @@ const fadeUp = {
 };
 
 const inquiryTypes = [
-  { value: "cruise-operator", label: "Cruise Operator", support: "Explore charter alignment, concept fit, and execution potential." },
-  { value: "investor", label: "Investor", support: "Discuss platform value, growth logic, and strategic fit." },
-  { value: "sponsor-brand", label: "Sponsor / Brand", support: "Explore activation opportunities and audience alignment." },
-  { value: "talent-representation", label: "Talent / Representation", support: "Discuss premium concept collaboration and audience relevance." },
-  { value: "strategic-collaborator", label: "Strategic Collaborator", support: "Explore aligned opportunities with long-term platform potential." },
-  { value: "general", label: "General Inquiry", support: "Share the context of your interest and what you are looking to discuss." },
+  { value: "cruise-operator", label: "Cruise Operator", support: "Explore charter alignment, concept fit, and operational potential." },
+  { value: "investor", label: "Investor", support: "Discuss platform value, growth trajectory, and strategic alignment." },
+  { value: "sponsor-brand", label: "Sponsor / Brand", support: "Explore activation environments and audience-driven brand integration." },
+  { value: "talent-representation", label: "Talent / Representation", support: "Discuss concept collaboration, audience relevance, and creative alignment." },
+  { value: "strategic-collaborator", label: "Strategic Collaborator", support: "Explore aligned opportunities with lasting platform potential." },
+  { value: "general", label: "General Inquiry", support: "Share the nature of your interest and what you'd like to explore." },
 ];
 
 const audienceCards = [
@@ -95,7 +95,7 @@ const Contact = () => {
           </div>
           <div className="container mx-auto px-6 relative z-10">
             <motion.div className="max-w-3xl" initial="hidden" animate="visible" variants={fadeUp} custom={0}>
-              <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-5">Start the Right Conversation</p>
+              <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-5">Strategic Inquiries</p>
               <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6">
                 Built for thoughtful introductions and serious opportunities.
               </h1>
@@ -153,7 +153,7 @@ const Contact = () => {
                 </div>
                 <div className="border-t border-border pt-6">
                   <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                    For the strongest conversations, please include a short overview of your role, organization, and what you are looking to explore.
+                    For the strongest alignment, include a short overview of your role, organization, and area of interest.
                   </p>
                 </div>
               </div>
@@ -169,10 +169,10 @@ const Contact = () => {
           <div className="container mx-auto px-6">
             <motion.div className="text-center max-w-3xl mx-auto mb-16" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={0}>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-5">
-                This page is built for the right kinds of conversations
+                Built for the right kinds of introductions
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                EmbarqX is designed to align with partners and collaborators who see the value of differentiated premium experiences and long-term platform potential.
+                EmbarqX is designed for partners and collaborators who see the value of differentiated experiences and lasting platform potential.
               </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -207,7 +207,7 @@ const Contact = () => {
                 Tell us what you are looking to explore
               </h2>
               <p className="font-body text-lg mt-4 leading-relaxed" style={{ color: "hsl(210 20% 35%)" }}>
-                The more context you provide, the more thoughtful the conversation can be.
+                The more context you share, the more meaningful the conversation can be.
               </p>
             </motion.div>
             <motion.div
@@ -279,7 +279,7 @@ const Contact = () => {
                   <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Message *</Label>
                   <Textarea
                     required name="message" rows={5}
-                    placeholder="Share a short overview of your interest, your role, and what you would like to explore with EmbarqX."
+                    placeholder="Share a brief overview of your interest and what you'd like to explore with EmbarqX."
                     className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary resize-none"
                   />
                 </div>
@@ -356,7 +356,7 @@ const Contact = () => {
               className="font-body text-base text-muted-foreground text-center max-w-2xl mx-auto leading-relaxed"
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} custom={2}
             >
-              EmbarqX is built for quality over volume. The strongest conversations are the ones where there is real alignment around concept, partnership potential, and long-term value.
+              EmbarqX values quality over volume. The strongest conversations happen when there is genuine alignment around concept, partnership potential, and long-term vision.
             </motion.p>
           </div>
         </section>
