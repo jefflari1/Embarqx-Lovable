@@ -6,22 +6,22 @@ const partners = [
   {
     icon: Building2,
     title: "Cruise Operators",
-    description: "Expand into differentiated premium concepts, unlock new thematic spaces, and create stronger recurring voyage opportunities without having to originate the full vision internally.",
+    description: "Unlock differentiated premium concepts and recurring voyage opportunities without originating the full vision internally.",
   },
   {
     icon: TrendingUp,
     title: "Investors",
-    description: "Participate in a platform designed to create value through recurring themed voyages, strategic partnerships, and multiple monetization layers beyond ticket sales.",
+    description: "Participate in a platform with recurring themed voyages, strategic partnerships, and multiple monetization layers.",
   },
   {
     icon: Megaphone,
     title: "Sponsors & Brands",
-    description: "Enter premium audience environments where cultural relevance, immersive programming, and identity-driven experiences create stronger activation potential.",
+    description: "Access premium audience environments where cultural relevance and identity-driven experiences create stronger activation potential.",
   },
   {
     icon: Users,
     title: "Talent & Strategic Collaborators",
-    description: "Translate influence, audience connection, and cultural relevance into premium themed experiences with long-term strategic value.",
+    description: "Translate influence and cultural relevance into premium themed experiences with long-term value.",
   },
 ];
 
@@ -41,7 +41,7 @@ const PartnerTypes = () => (
           Every seat at this table is designed to win.
         </h2>
         <p className="font-body text-lg text-[#B8C4D1] max-w-3xl mx-auto">
-          EmbarqX is designed to create value by aligning the right operators, investors, sponsors, and talent-side collaborators around premium voyage concepts with long-term platform potential.
+          The right operators, investors, sponsors, and talent — aligned around premium voyage concepts.
         </p>
       </motion.div>
 

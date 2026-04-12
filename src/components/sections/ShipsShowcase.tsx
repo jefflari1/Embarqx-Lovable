@@ -43,7 +43,7 @@ const ShipsShowcase = () => (
           The scale of what's possible at sea.
         </h2>
         <p className="font-body text-[#B8C4D1] text-base max-w-3xl mx-auto">
-          EmbarqX is designed for premium voyage environments capable of supporting immersive programming, differentiated hospitality, and high-value audience experiences at multiple levels of scale.
+          Premium environments at every level of scale — from intimate retreats to full-scale entertainment flagships.
         </p>
       </motion.div>
 
