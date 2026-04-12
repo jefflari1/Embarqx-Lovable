@@ -188,10 +188,10 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 2: WHY NOW ─── */}
+        {/* ─── SECTION 2: WHY NOW — lighter slate-blue ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #0A1E35 0%, #0D2A47 50%, #0A1E35 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(210 45% 18%) 0%, hsl(207 42% 22%) 50%, hsl(210 45% 18%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
@@ -218,10 +218,10 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 3: PLATFORM ─── */}
+        {/* ─── SECTION 3: PLATFORM — deep navy ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #0A1E35 0%, #061321 50%, #0A1E35 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(212 60% 7%) 0%, hsl(210 55% 10%) 50%, hsl(212 60% 7%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-6">
@@ -249,10 +249,10 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 4: VALUE MODEL ─── */}
+        {/* ─── SECTION 4: VALUE MODEL — slate-blue surface ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #0A1E35 0%, #0D2A47 50%, #0A1E35 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(210 50% 14%) 0%, hsl(207 45% 20%) 50%, hsl(210 50% 14%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
@@ -283,14 +283,14 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 5: WHY EMBARQX STANDS APART ─── */}
+        {/* ─── SECTION 5: WHY EMBARQX STANDS APART — warm editorial light panel ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #0A1E35 0%, #061321 50%, #0A1E35 100%)" }}
+          style={{ background: "rgba(245, 241, 232, 0.94)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+              <h2 className="font-display text-3xl md:text-4xl font-bold !text-[hsl(212,60%,7%)]">
                 Why EmbarqX stands apart
               </h2>
             </motion.div>
@@ -299,21 +299,21 @@ const Investors = () => {
                 <motion.div
                   key={item.title}
                   {...stagger(i)}
-                  className="gradient-card rounded-xl border border-border p-8 hover:border-primary/20 transition-all duration-500"
+                  className="bg-white/60 rounded-xl border border-[hsl(40,30%,80%)] p-8 hover:border-[hsl(40,40%,55%)]/30 transition-all duration-500"
                 >
-                  <item.icon className="w-6 h-6 text-primary mb-4" />
-                  <h3 className="font-display text-base font-bold mb-3 text-foreground">{item.title}</h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">{item.text}</p>
+                  <item.icon className="w-6 h-6 text-[hsl(40,40%,45%)] mb-4" />
+                  <h3 className="font-display text-base font-bold mb-3 !text-[hsl(212,60%,7%)]">{item.title}</h3>
+                  <p className="font-body text-sm text-[hsl(212,25%,35%)] leading-relaxed">{item.text}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ─── SECTION 6: ROADMAP ─── */}
+        {/* ─── SECTION 6: ROADMAP — deep navy with depth ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #0A1E35 0%, #0D2A47 50%, #0A1E35 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(210 55% 11%) 0%, hsl(212 58% 9%) 50%, hsl(210 55% 11%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
@@ -342,10 +342,10 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 7: PORTFOLIO ─── */}
+        {/* ─── SECTION 7: PORTFOLIO — lighter slate-blue ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #0A1E35 0%, #061321 50%, #0A1E35 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(207 42% 18%) 0%, hsl(210 45% 22%) 50%, hsl(207 42% 18%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-14">
@@ -373,10 +373,10 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 8: WHAT THE RIGHT INVESTOR IS BACKING ─── */}
+        {/* ─── SECTION 8: WHAT THE RIGHT INVESTOR IS BACKING — deep navy ─── */}
         <section
           className="py-24 md:py-32"
-          style={{ background: "linear-gradient(180deg, #061321 0%, #0A1929 50%, #061321 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(212 60% 7%) 0%, hsl(210 55% 10%) 50%, hsl(212 60% 7%) 100%)" }}
         >
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-12">
@@ -402,7 +402,7 @@ const Investors = () => {
           </div>
         </section>
 
-        {/* ─── SECTION 9: INVESTOR CTA ─── */}
+        {/* ─── SECTION 9: INVESTOR CTA — dramatic slate with champagne glow ─── */}
         <section
           id="investor-cta"
           className="relative py-28 md:py-36 overflow-hidden"

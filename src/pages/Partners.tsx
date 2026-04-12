@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Building2, TrendingUp, Megaphone, Users } from "lucide-react";
 
 const partnerBlocks = [
@@ -32,23 +32,25 @@ const partnerBlocks = [
 ];
 
 const Partners = () => {
-  const scrollToContact = () => {
-    document.getElementById("partners-cta")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
       <Navbar />
       <main className="min-h-screen">
         {/* Hero */}
         <section
-          className="pt-36 pb-24 md:pt-44 md:pb-32"
+          className="relative pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden"
           style={{
             background:
-              "linear-gradient(180deg, #061321 0%, #0D2A47 50%, #061321 100%)",
+              "linear-gradient(180deg, #061321 0%, #0D2A47 50%, #1B4266 100%)",
           }}
         >
-          <div className="container mx-auto px-6">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse 60% 40% at 50% 70%, hsla(40,40%,55%,0.05) 0%, transparent 70%)",
+            }}
+          />
+          <div className="container mx-auto px-6 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -90,8 +92,11 @@ const Partners = () => {
           </div>
         </section>
 
-        {/* Main Content */}
-        <section className="py-24 md:py-32 bg-card/40">
+        {/* Main Content — Warm editorial light panel */}
+        <section
+          className="py-24 md:py-32"
+          style={{ background: "rgba(245, 241, 232, 0.94)" }}
+        >
           <div className="container mx-auto px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -100,15 +105,15 @@ const Partners = () => {
               transition={{ duration: 0.8 }}
               className="max-w-3xl mx-auto text-center mb-20"
             >
-              <h2 className="font-display text-3xl md:text-5xl font-bold mb-8 text-foreground">
+              <h2 className="font-display text-3xl md:text-5xl font-bold mb-8 !text-[hsl(212,60%,7%)]">
                 Built for the Right Partners
               </h2>
-              <p className="font-body text-lg text-muted-foreground leading-relaxed mb-5">
+              <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mb-5">
                 EmbarqX is designed to work with the right operators, investors,
                 sponsors, and talent-side partners who see the opportunity to
                 create premium experiences with lasting commercial potential.
               </p>
-              <p className="font-body text-base text-muted-foreground/90 leading-relaxed">
+              <p className="font-body text-base text-[hsl(212,25%,35%)]/90 leading-relaxed">
                 The strongest themed voyages are not built in isolation. They are
                 built by aligning execution, audience, talent, programming, and
                 commercial strategy into one coherent platform. That is where
@@ -124,13 +129,13 @@ const Partners = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: i * 0.12 }}
-                  className="gradient-card rounded-xl border border-border p-10 hover:border-primary/20 transition-all duration-500"
+                  className="bg-white/60 rounded-xl border border-[hsl(40,30%,80%)] p-10 hover:border-[hsl(40,40%,55%)]/30 transition-all duration-500"
                 >
-                  <block.icon className="w-8 h-8 text-primary mb-5" />
-                  <h3 className="font-display text-xl font-bold mb-4 text-foreground">
+                  <block.icon className="w-8 h-8 text-[hsl(40,40%,45%)] mb-5" />
+                  <h3 className="font-display text-xl font-bold mb-4 !text-[hsl(212,60%,7%)]">
                     {block.title}
                   </h3>
-                  <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                  <p className="font-body text-sm text-[hsl(212,25%,35%)] leading-relaxed">
                     {block.description}
                   </p>
                 </motion.div>
@@ -142,13 +147,19 @@ const Partners = () => {
         {/* Closing CTA */}
         <section
           id="partners-cta"
-          className="py-24 md:py-32"
+          className="relative py-24 md:py-32 overflow-hidden"
           style={{
             background:
               "linear-gradient(180deg, #0D2A47 0%, #1B4266 50%, #0D2A47 100%)",
           }}
         >
-          <div className="container mx-auto px-6">
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "radial-gradient(ellipse 60% 50% at 50% 55%, hsla(40,40%,55%,0.05) 0%, transparent 70%)",
+            }}
+          />
+          <div className="container mx-auto px-6 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
