@@ -56,7 +56,10 @@ const GalleryPreview = () => (
               width={640}
               height={480}
             />
-            <div className="absolute inset-0 bg-background/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+            <span className="absolute bottom-3 left-3 font-body text-xs font-semibold tracking-wide text-white/90">
+              {img.label}
+            </span>
           </motion.div>
         ))}
       </div>
