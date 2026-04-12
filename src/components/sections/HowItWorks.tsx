@@ -25,7 +25,7 @@ const HowItWorks = () => (
           How the Platform Works
         </h2>
         <p className="font-body text-base md:text-lg text-[#B8C4D1] max-w-3xl mx-auto mt-6 leading-relaxed">
-          Six elements aligned into one coherent strategy — from concept to launch.
+          Six elements aligned into one coherent model — from audience to lasting value.
         </p>
       </motion.div>
 

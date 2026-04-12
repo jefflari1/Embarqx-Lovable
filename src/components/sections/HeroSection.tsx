@@ -33,7 +33,7 @@ const HeroSection = () => (
           transition={{ delay: 0.3, duration: 0.8 }}
           className="font-body text-sm tracking-[0.3em] uppercase text-gold mb-6"
         >
-          Building the Next Generation of Themed Voyages
+          Premium Themed Voyages, Reimagined
         </motion.p>
 
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8">

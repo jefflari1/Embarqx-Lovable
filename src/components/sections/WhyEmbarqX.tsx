@@ -26,7 +26,7 @@ const WhyEmbarqX = () => (
           Why EmbarqX
         </h2>
         <p className="font-body text-base md:text-lg text-[#3A5068] max-w-3xl mx-auto mt-6 leading-relaxed">
-          What makes the platform different — and why it's built to last.
+          Six reasons the model is built differently — and designed to last.
         </p>
       </motion.div>
 

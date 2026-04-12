@@ -61,7 +61,7 @@ const ConceptsCarousel = () => {
           className="text-center mb-16"
         >
           <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
-            Signature Concepts
+            Experience Portfolio
           </p>
           <h2 className="font-display text-3xl md:text-5xl font-bold">
             Signature Concepts

@@ -37,10 +37,10 @@ const ShipsShowcase = () => (
         className="text-center mb-4"
       >
         <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
-          Illustrative Vessel Possibilities
+          Venue Environments
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-          The scale of what's possible at sea.
+          The scale of what's possible at sea
         </h2>
         <p className="font-body text-[#B8C4D1] text-base max-w-3xl mx-auto">
           Premium environments at every level of scale — from intimate retreats to full-scale entertainment flagships.

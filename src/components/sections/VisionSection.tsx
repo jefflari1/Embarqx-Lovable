@@ -29,7 +29,7 @@ const VisionSection = () => (
         className="max-w-3xl mx-auto text-center mb-16"
       >
         <p className="font-body text-sm tracking-[0.25em] uppercase text-primary mb-4">
-          The Platform
+          The Vision
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
           The Vision Behind EmbarqX
