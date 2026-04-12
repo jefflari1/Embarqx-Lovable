@@ -442,14 +442,6 @@ const Experiences = () => (
           <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.07),transparent_60%)]" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
-          <img
-            src={heroImg}
-            alt=""
-            className="w-full h-full object-cover"
-            loading="lazy"
-            aria-hidden="true"
-          />
-        </div>
         <div className="relative z-10 container mx-auto px-6 text-center">
           <motion.div {...fadeUp} className="max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
