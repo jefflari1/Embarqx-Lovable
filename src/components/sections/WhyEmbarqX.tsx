@@ -11,7 +11,7 @@ const reasons = [
 ];
 
 const WhyEmbarqX = () => (
-  <section className="py-24 border-t border-gold/20">
+  <section className="py-24" style={{ background: 'rgba(245,241,232,0.94)' }}>
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -19,10 +19,10 @@ const WhyEmbarqX = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
+        <p className="font-body text-sm tracking-[0.25em] uppercase text-[#B89B5E] mb-4">
           Strategic Value
         </p>
-        <h2 className="font-display text-3xl md:text-5xl font-bold">
+        <h2 className="font-display text-3xl md:text-5xl font-bold" style={{ color: '#0B1E33' }}>
           Why EmbarqX
         </h2>
       </motion.div>
@@ -35,11 +35,11 @@ const WhyEmbarqX = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="p-6 rounded-xl border border-border hover:border-gold/20 transition-all duration-500 group"
+            className="p-6 rounded-xl border border-[#B89B5E]/15 hover:border-[#B89B5E]/30 transition-all duration-500 group bg-white/60"
           >
-            <r.icon className="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform" />
-            <h3 className="font-display text-lg font-bold mb-2">{r.title}</h3>
-            <p className="font-body text-sm text-[#B8C4D1] leading-relaxed">
+            <r.icon className="w-8 h-8 text-[#B89B5E] mb-4 group-hover:scale-110 transition-transform" />
+            <h3 className="font-display text-lg font-bold mb-2" style={{ color: '#0B1E33' }}>{r.title}</h3>
+            <p className="font-body text-sm text-[#3A5068] leading-relaxed">
               {r.description}
             </p>
           </motion.div>

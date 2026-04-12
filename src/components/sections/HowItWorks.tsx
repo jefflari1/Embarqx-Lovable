@@ -10,7 +10,7 @@ const elements = [
 ];
 
 const HowItWorks = () => (
-  <section className="py-24 bg-section-alt">
+  <section className="py-24" style={{ background: 'linear-gradient(180deg, #071A2E 0%, #0D2A47 50%, #071A2E 100%)' }}>
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

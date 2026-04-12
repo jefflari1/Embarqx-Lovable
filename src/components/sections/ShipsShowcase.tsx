@@ -25,7 +25,7 @@ const vessels = [
 ];
 
 const ShipsShowcase = () => (
-  <section className="py-24 bg-section-alt">
+  <section className="relative py-24" style={{ background: 'linear-gradient(180deg, #061321 0%, #0A1E35 100%)' }}>
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

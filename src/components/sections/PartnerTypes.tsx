@@ -41,7 +41,7 @@ const partners = [
 ];
 
 const PartnerTypes = () => (
-  <section className="py-24 border-t border-gold/20">
+  <section className="py-24" style={{ background: 'linear-gradient(180deg, #0D2A47 0%, #1B4266 50%, #0D2A47 100%)' }}>
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
