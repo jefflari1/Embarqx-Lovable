@@ -77,8 +77,14 @@ const ShipsShowcase = () => (
                 {v.title}
               </h3>
               <p className="font-body text-[#B8C4D1] leading-relaxed">
+                <span className="text-gold font-semibold">Best for: </span>
+                {v.bestFor}
+              </p>
+              <p className="font-body text-[#B8C4D1] leading-relaxed">
+                <span className="text-gold font-semibold">Why it works: </span>
                 {v.description}
               </p>
+              <p className="font-body text-xs tracking-wide uppercase text-[#8D9AA8] mb-1">Key spaces:</p>
               <div className="flex flex-wrap gap-3">
                 {v.specs.map((s) => (
                   <span
