@@ -7,9 +7,9 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Partners from "./pages/Partners.tsx";
 import Investors from "./pages/Investors.tsx";
+import Experiences from "./pages/Experiences.tsx";
 import {
   ConceptPage,
-  ExperiencesPage,
   ShipsPage,
   GalleryPage,
   AboutPage,
@@ -28,7 +28,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/concept" element={<ConceptPage />} />
-          <Route path="/experiences" element={<ExperiencesPage />} />
+          <Route path="/experiences" element={<Experiences />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/investors" element={<Investors />} />
           <Route path="/ships" element={<ShipsPage />} />
