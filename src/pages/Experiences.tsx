@@ -203,7 +203,8 @@ const Experiences = () => (
           width={1920}
           height={800}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-[hsl(207_40%_20%)]" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-[radial-gradient(ellipse,hsl(40_40%_55%/0.06),transparent_70%)]" />
         <div className="relative z-10 container mx-auto px-6 pt-32 pb-24">
           <motion.div {...fadeUp} className="max-w-3xl">
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
