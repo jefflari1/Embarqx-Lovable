@@ -9,10 +9,10 @@ import Partners from "./pages/Partners.tsx";
 import Investors from "./pages/Investors.tsx";
 import Experiences from "./pages/Experiences.tsx";
 import Concept from "./pages/Concept.tsx";
+import About from "./pages/About.tsx";
 import {
   ShipsPage,
   GalleryPage,
-  AboutPage,
   FAQPage,
   ContactPage,
 } from "./pages/SubPages.tsx";
@@ -33,7 +33,7 @@ const App = () => (
           <Route path="/investors" element={<Investors />} />
           <Route path="/ships" element={<ShipsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
