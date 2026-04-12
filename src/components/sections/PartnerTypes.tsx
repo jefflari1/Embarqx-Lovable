@@ -35,10 +35,10 @@ const PartnerTypes = () => (
         className="text-center mb-16"
       >
         <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
-          Partnership Opportunities
+          Strategic Partners
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-          Every seat at this table is designed to win.
+          Built for strategic partners who see the bigger picture.
         </h2>
         <p className="font-body text-lg text-[#B8C4D1] max-w-3xl mx-auto">
           The right operators, investors, sponsors, and talent — aligned around premium voyage concepts.

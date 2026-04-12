@@ -32,7 +32,7 @@ const WhatWeCreate = () => (
         className="text-center mb-16"
       >
         <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
-          The Platform
+          Value Creation
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold">
           How EmbarqX Creates Value

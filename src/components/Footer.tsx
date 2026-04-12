@@ -36,8 +36,8 @@ const Footer = () => (
         <div className="space-y-4">
           <Logo variant="footer" />
           <p className="text-[#8D9AA8] text-sm leading-relaxed max-w-xs">
-            Premium themed cruise concepts that unite culture, celebrity, community,
-            entertainment, luxury, and destination into unforgettable voyages built for scale.
+            Themed cruise concepts that unite culture, community, hospitality,
+            and commercial strategy into premium voyages built for lasting value.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const Footer = () => (
           © {new Date().getFullYear()} EmbarqX. All rights reserved.
         </p>
         <p className="text-[#8D9AA8] text-xs">
-          Premium Themed Cruise Experiences
+          Premium Themed Experiences at Sea
         </p>
       </div>
     </div>

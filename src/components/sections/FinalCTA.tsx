@@ -35,8 +35,7 @@ const FinalCTA = () => (
         </h2>
         <p className="font-body text-lg text-[#B8C4D1] mb-10 leading-relaxed">
           Whether you're an investor, operator, sponsor, talent partner, or
-          strategic collaborator — we'd love to start a conversation about
-          what's possible.
+          strategic collaborator — the right conversation starts here.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link

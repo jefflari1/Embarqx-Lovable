@@ -119,13 +119,13 @@ const FAQ = () => (
         <div className="relative z-10 container mx-auto px-6 pt-32 pb-24">
           <motion.div {...fadeUp} className="max-w-3xl">
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
-              Frequently Asked Questions
+              Questions & Clarity
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
               Clarity for the right conversations.
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              EmbarqX is designed to bring together premium concepts, aligned partnerships, and long-term platform thinking. These answers are here to clarify what EmbarqX is, how it works, and how the right partners can engage.
+              EmbarqX brings together concepts, partnerships, and long-term platform thinking. These answers clarify what we build, how we work, and how the right partners can engage.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

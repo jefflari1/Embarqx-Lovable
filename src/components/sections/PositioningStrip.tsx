@@ -18,7 +18,7 @@ const PositioningStrip = () => (
         </h2>
         <p className="font-body text-[#B8C4D1] text-lg leading-relaxed">
           EmbarqX sits at the intersection of entertainment, hospitality, community,
-          and commerce — designing experiences people don't just attend. They identify with.
+          and commerce — designing experiences people don't just attend, but identify with.
         </p>
       </motion.div>
     </div>

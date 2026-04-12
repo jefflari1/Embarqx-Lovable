@@ -26,7 +26,7 @@ const GalleryPreview = () => (
         className="text-center mb-12"
       >
         <p className="font-body text-sm tracking-[0.25em] uppercase text-gold mb-4">
-          Atmosphere
+          The Experience
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
           A glimpse of what awaits.
@@ -66,10 +66,10 @@ const GalleryPreview = () => (
 
       <div className="text-center mt-10">
         <Link
-          to="/gallery"
+          to="/experiences"
           className="font-body text-sm font-semibold text-gold hover:text-gold-warm transition-colors"
         >
-          View Full Gallery →
+          Explore the full experience portfolio →
         </Link>
       </div>
     </div>
