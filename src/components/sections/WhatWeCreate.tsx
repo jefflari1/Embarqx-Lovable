@@ -6,19 +6,19 @@ const pillars = [
     icon: Sparkles,
     title: "Signature Experiences",
     description:
-      "We originate themed voyage concepts designed to bring together audience identity, premium hospitality, curated programming, and unforgettable moments at sea.",
+      "We originate themed voyage concepts that bring together audience identity, curated programming, and unforgettable moments at sea.",
   },
   {
     icon: Handshake,
     title: "Strategic Partnerships",
     description:
-      "We align the right operators, sponsors, talent-side collaborators, and strategic partners around concepts designed for audience growth, programming strength, and long-term platform expansion.",
+      "We align operators, sponsors, and talent-side collaborators around concepts built for growth and long-term platform value.",
   },
   {
     icon: TrendingUp,
     title: "Scalable Cruise IP",
     description:
-      "Each concept is designed to become more than a single sailing, creating the foundation for recurring voyages, deeper brand equity, and broader long-term commercial value.",
+      "Each concept is built to become more than a single sailing — the foundation for recurring voyages and deeper brand equity.",
   },
 ];
 
@@ -38,7 +38,7 @@ const WhatWeCreate = () => (
           How EmbarqX Creates Value
         </h2>
         <p className="font-body text-[#B8C4D1] text-lg leading-relaxed max-w-3xl mx-auto mt-6">
-          EmbarqX creates value by developing premium voyage concepts that align select audiences, premium experiences, strategic partnerships, and long-term platform potential.
+          Three pillars drive every EmbarqX voyage — from concept to launch.
         </p>
       </motion.div>
 

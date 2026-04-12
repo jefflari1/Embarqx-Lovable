@@ -67,10 +67,7 @@ const ConceptsCarousel = () => {
             Signature Concepts
           </h2>
           <p className="font-body text-[#B8C4D1] text-lg leading-relaxed max-w-3xl mx-auto mt-6">
-            Each EmbarqX concept is built around a specific audience, a clear thematic identity, and the kind of programming that can turn a voyage into something people deeply connect with.
-          </p>
-          <p className="font-body text-[#8D9AA8] text-base leading-relaxed max-w-3xl mx-auto mt-3">
-            Each concept is designed to connect with a specific audience and create experiences that carry stronger emotional demand and broader commercial upside.
+            Each concept is built around a specific audience, a clear identity, and programming that turns a voyage into something people deeply connect with.
           </p>
         </motion.div>
 

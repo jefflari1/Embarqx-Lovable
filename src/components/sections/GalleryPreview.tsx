@@ -32,7 +32,7 @@ const GalleryPreview = () => (
           A glimpse of what awaits.
         </h2>
         <p className="font-body text-[#B8C4D1] text-base max-w-3xl mx-auto">
-          From arrival and scale to nightlife, dining, performance, and elevated connection, EmbarqX is designed to create voyages that feel as memorable as the communities they bring together.
+          Nightlife, dining, performance, wellness, and elevated connection — voyages as memorable as the communities they bring together.
         </p>
       </motion.div>
 

@@ -35,21 +35,10 @@ const VisionSection = () => (
           The Vision Behind EmbarqX
         </h2>
         <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-          EmbarqX is building a premium themed cruise platform designed to turn
-          flagship experiences into a repeatable portfolio of culture-led voyages
-          at sea.
-        </p>
-        <p className="font-body text-base text-muted-foreground/90 leading-relaxed mb-4">
-          This is not a one-off cruise concept. It is a platform strategy built
-          around the idea that premium travel becomes far more powerful when it
-          is rooted in identity, community, talent, and unforgettable
-          programming.
+          EmbarqX is a premium themed cruise platform — turning culture-led concepts into a repeatable portfolio of flagship voyages at sea.
         </p>
         <p className="font-body text-base text-muted-foreground/90 leading-relaxed">
-          By combining strong concepts, the right partners, and premium
-          experience design, EmbarqX is positioned to create voyages that
-          generate emotional demand, commercial differentiation, and long-term
-          brand value.
+          When premium travel is rooted in identity, community, and unforgettable programming, it creates something far more powerful — emotional demand, commercial differentiation, and lasting brand value.
         </p>
       </motion.div>
 

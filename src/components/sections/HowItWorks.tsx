@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { number: "01", title: "Audience", description: "We begin with a clearly defined audience whose identity, passion, and community alignment can support stronger emotional demand and premium positioning." },
-  { number: "02", title: "Concept", description: "Each voyage starts with a concept built around a distinct theme, cultural energy, or point of connection that gives the experience meaning beyond travel itself." },
-  { number: "03", title: "Talent & Programming", description: "The right mix of talent, immersive programming, and curated moments helps transform a strong concept into an experience people deeply connect with and remember." },
-  { number: "04", title: "Strategic Partners", description: "Operators, sponsors, collaborators, and other aligned partners help strengthen execution, audience growth, commercial potential, and long-term platform expansion." },
-  { number: "05", title: "Premium Experience Design", description: "Hospitality, atmosphere, access, storytelling, and on-board experience design work together to create a voyage that feels elevated, differentiated, and worthy of premium demand." },
-  { number: "06", title: "Platform Value", description: "When these elements are aligned, the result is more than a single sailing. It becomes the foundation for recurring voyages, stronger brand equity, and broader long-term value." },
+  { number: "01", title: "Audience", description: "Start with a defined community whose identity and passion can drive premium demand." },
+  { number: "02", title: "Concept", description: "Build around a distinct theme that gives the experience meaning beyond travel." },
+  { number: "03", title: "Talent & Programming", description: "Curate the right mix of talent and moments that people deeply connect with." },
+  { number: "04", title: "Strategic Partners", description: "Align operators, sponsors, and collaborators to strengthen execution and scale." },
+  { number: "05", title: "Experience Design", description: "Hospitality, atmosphere, and storytelling that feel elevated and worthy of premium demand." },
+  { number: "06", title: "Platform Value", description: "One sailing becomes recurring voyages, stronger brand equity, and long-term value." },
 ];
 
 const HowItWorks = () => (
@@ -25,10 +25,7 @@ const HowItWorks = () => (
           How the Platform Works
         </h2>
         <p className="font-body text-base md:text-lg text-[#B8C4D1] max-w-3xl mx-auto mt-6 leading-relaxed">
-          EmbarqX brings together the core elements of a premium themed voyage into one aligned platform, turning strong concepts into experiences with deeper audience connection and broader long-term value.
-        </p>
-        <p className="font-body text-sm md:text-base text-[#8D9AA8] max-w-3xl mx-auto mt-4 leading-relaxed">
-          The strongest voyages are built by aligning the right audience, concept, talent, programming, partners, and experience design into one coherent strategy. EmbarqX is designed to help shape that alignment from concept to launch.
+          Six elements aligned into one coherent strategy — from concept to launch.
         </p>
       </motion.div>
 
@@ -51,14 +48,6 @@ const HowItWorks = () => (
         ))}
       </div>
 
-      <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="font-body text-sm md:text-base text-[#8D9AA8] max-w-3xl mx-auto mt-12 text-center leading-relaxed"
-      >
-        EmbarqX is built to connect these elements into a platform that can launch strong flagship experiences and grow into a repeatable portfolio over time.
-      </motion.p>
     </div>
   </section>
 );
