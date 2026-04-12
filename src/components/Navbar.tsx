@@ -5,16 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Logo from "./Logo";
 
 const navLinks = [
-  { label: "Home", path: "/" },
   { label: "The Concept", path: "/concept" },
   { label: "Experiences", path: "/experiences" },
   { label: "Partners", path: "/partners" },
   { label: "Investors", path: "/investors" },
   { label: "Ships & Venues", path: "/ships" },
-  { label: "Gallery", path: "/gallery" },
   { label: "About", path: "/about" },
-  { label: "FAQ", path: "/faq" },
-  { label: "Contact", path: "/contact" },
 ];
 
 const Navbar = () => {
