@@ -7,8 +7,8 @@ interface LogoProps {
 }
 
 const sizeClasses = {
-  navbar: "h-[100px] md:h-[120px]",
-  footer: "h-[44px] md:h-[52px]",
+  navbar: "w-[250px] md:w-[360px] h-auto",
+  footer: "h-[44px] md:h-[52px] w-auto",
 };
 
 function Logo({ variant = "navbar", linked = true }: LogoProps) {
@@ -16,7 +16,7 @@ function Logo({ variant = "navbar", linked = true }: LogoProps) {
     <img
       src={logoSrc}
       alt="EmbarqX logo"
-      className={`${sizeClasses[variant]} w-auto object-contain`}
+      className={`${sizeClasses[variant]} object-contain`}
       draggable={false}
     />
   );
