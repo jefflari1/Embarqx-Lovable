@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center px-6">
         {/* Left zone: logo */}
-        <div className="w-[180px] flex-shrink-0 flex items-center">
+        <div className="w-[260px] flex-shrink-0 flex items-center">
           <Logo variant="navbar" />
         </div>
 
