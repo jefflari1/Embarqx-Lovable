@@ -16,7 +16,7 @@ function Logo({ variant = "navbar", linked = true }: LogoProps) {
     <img
       src={logoSrc}
       alt="EmbarqX logo"
-      className={`${sizeClasses[variant]} w-auto object-contain mix-blend-lighten`}
+      className={`${sizeClasses[variant]} w-auto object-contain mix-blend-screen`}
       draggable={false}
     />
   );
