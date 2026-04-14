@@ -7,7 +7,7 @@ interface LogoProps {
 }
 
 const sizeClasses = {
-  navbar: "h-[70px] md:h-[80px]",
+  navbar: "h-[100px] md:h-[120px]",
   footer: "h-[44px] md:h-[52px]",
 };
 
