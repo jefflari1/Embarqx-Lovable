@@ -34,9 +34,9 @@ const Navbar = () => {
         scrolled ? "glass-strong py-3" : "py-5"
       }`}
     >
-      <div className="container mx-auto flex items-center px-8 md:px-10">
+      <div className="container mx-auto flex items-center px-6">
         {/* Left zone: logo */}
-        <div className="w-[290px] md:w-[410px] flex-shrink-0 flex items-center">
+        <div className="w-[180px] md:w-[240px] flex-shrink-0 flex items-center">
           <Logo variant="navbar" />
         </div>
 
