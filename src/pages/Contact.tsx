@@ -443,15 +443,6 @@ const Contact = () => {
                     </div>
                     <div className="space-y-2">
                       <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
-                        <Globe className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Website
-                      </Label>
-                      <Input
-                        name="website" placeholder="https://yoursite.com"
-                        className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
                         <MapPin className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Location
                       </Label>
                       <Input
