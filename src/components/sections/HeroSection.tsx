@@ -17,8 +17,10 @@ const HeroSection = () => (
         aria-hidden="true"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#061321]/75 via-[#0D2A47]/55 to-[#061321]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#061321]/70 to-transparent" />
+      {/* Light base overlay — desktop ~22%, mobile ~32% for readability */}
+      <div className="absolute inset-0 bg-[#061321]/30 md:bg-[#061321]/20" />
+      {/* Subtle bottom fade behind text area only */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#061321]/60 via-[#061321]/10 to-transparent" />
       {/* Warm champagne glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full bg-[#D7C08A]/[0.04] blur-[120px] pointer-events-none" />
     </div>
