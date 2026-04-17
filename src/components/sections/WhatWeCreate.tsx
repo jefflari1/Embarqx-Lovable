@@ -35,10 +35,10 @@ const WhatWeCreate = () => (
           Value Creation
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold">
-          How EmbarqX Creates Value
+          How EmbarqX™ Creates Value
         </h2>
         <p className="font-body text-[#B8C4D1] text-lg leading-relaxed max-w-3xl mx-auto mt-6">
-          Three pillars drive every EmbarqX voyage — from concept to launch.
+          Three pillars drive every EmbarqX™ voyage — from concept to launch.
         </p>
       </motion.div>
 

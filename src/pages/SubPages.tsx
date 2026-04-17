@@ -44,7 +44,7 @@ export const ConceptPage = () => (
   <PlaceholderPage
     title="The Concept"
     subtitle="The Platform"
-    description="Discover how EmbarqX creates premium themed cruise concepts that unite culture, celebrity, community, and commerce into scalable voyage experiences."
+    description="Discover how EmbarqX™ creates premium themed cruise concepts that unite culture, celebrity, community, and commerce into scalable voyage experiences."
   />
 );
 
@@ -52,7 +52,7 @@ export const ExperiencesPage = () => (
   <PlaceholderPage
     title="Signature Experiences"
     subtitle="Curated Voyages"
-    description="Explore the range of premium themed cruise concepts EmbarqX can originate, package, and scale — from music and culture to wellness and gaming."
+    description="Explore the range of premium themed cruise concepts EmbarqX™ can originate, package, and scale — from music and culture to wellness and gaming."
   />
 );
 
@@ -60,7 +60,7 @@ export const PartnersPage = () => (
   <PlaceholderPage
     title="Partners"
     subtitle="Collaborate"
-    description="Learn how cruise operators, sponsors, talent partners, and strategic collaborators can participate in the EmbarqX ecosystem."
+    description="Learn how cruise operators, sponsors, talent partners, and strategic collaborators can participate in the EmbarqX™ ecosystem."
   />
 );
 
@@ -84,13 +84,13 @@ export const GalleryPage = () => (
   <PlaceholderPage
     title="Gallery"
     subtitle="Visual Stories"
-    description="A curated visual preview of the premium atmospheres, venues, and experiences that define the EmbarqX vision."
+    description="A curated visual preview of the premium atmospheres, venues, and experiences that define the EmbarqX™ vision."
   />
 );
 
 export const AboutPage = () => (
   <PlaceholderPage
-    title="About EmbarqX"
+    title="About EmbarqX™"
     subtitle="Our Story"
     description="The vision, philosophy, and strategic intent behind the world's premier themed cruise experience platform."
   />
@@ -100,7 +100,7 @@ export const FAQPage = () => (
   <PlaceholderPage
     title="FAQ"
     subtitle="Questions"
-    description="Answers to frequently asked questions about EmbarqX, our model, partnerships, and how to get involved."
+    description="Answers to frequently asked questions about EmbarqX™, our model, partnerships, and how to get involved."
   />
 );
 

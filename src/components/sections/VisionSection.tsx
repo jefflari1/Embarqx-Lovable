@@ -4,7 +4,7 @@ const pillars = [
   {
     title: "A Platform, Not a Single Event",
     description:
-      "EmbarqX is designed to move beyond one-time activations and build a recurring ecosystem of premium themed voyages.",
+      "EmbarqX™ is designed to move beyond one-time activations and build a recurring ecosystem of premium themed voyages.",
   },
   {
     title: "Designed for Identity-Driven Demand",
@@ -32,10 +32,10 @@ const VisionSection = () => (
           The Vision
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-          The Vision Behind EmbarqX
+          The Vision Behind EmbarqX™
         </h2>
         <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-          EmbarqX is a premium themed cruise platform — turning culture-led concepts into a repeatable portfolio of flagship voyages at sea.
+          EmbarqX™ is a premium themed cruise platform — turning culture-led concepts into a repeatable portfolio of flagship voyages at sea.
         </p>
         <p className="font-body text-base text-muted-foreground/90 leading-relaxed">
           When premium travel is rooted in identity, community, and unforgettable programming, it creates something far more powerful — emotional demand, commercial differentiation, and lasting brand value.

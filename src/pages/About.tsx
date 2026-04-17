@@ -67,20 +67,20 @@ const About = () => (
         <div className="relative z-10 container mx-auto px-6 pt-32 pb-24">
           <motion.div {...fadeUp} className="max-w-3xl">
             <p className="font-body text-sm tracking-[0.3em] uppercase text-primary mb-6">
-              About EmbarqX
+              About EmbarqX™
             </p>
             <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8">
               Building a premium platform for experiences that matter at sea.
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              EmbarqX was created to move beyond one-off cruise concepts and build a premium themed voyage platform where audience identity, curated experience design, and aligned partnerships can create lasting long-term value.
+              EmbarqX™ was created to move beyond one-off cruise concepts and build a premium themed voyage platform where audience identity, curated experience design, and aligned partnerships can create lasting long-term value.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
-                Partner With EmbarqX
+                Partner With EmbarqX™
               </Link>
               <Link
                 to="/concept"
@@ -102,13 +102,13 @@ const About = () => (
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-                Why EmbarqX was created
+                Why EmbarqX™ was created
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 The strongest premium travel experiences are increasingly shaped by identity, culture, community, access, and the quality of the experience itself. Yet too many voyage concepts remain isolated activations rather than the foundation for something bigger.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                EmbarqX was created to build a more intentional model — one where strong concepts, premium hospitality, curated programming, and the right partnerships can come together as part of a platform designed to grow over time.
+                EmbarqX™ was created to build a more intentional model — one where strong concepts, premium hospitality, curated programming, and the right partnerships can come together as part of a platform designed to grow over time.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
                 This is not about creating a single memorable sailing. It is about building a premium experience company capable of launching differentiated voyages with stronger audience resonance, broader commercial potential, and long-term platform value.
@@ -156,16 +156,16 @@ const About = () => (
                 The founder vision
               </h2>
               <p className="font-body text-base text-primary italic mb-8">
-                EmbarqX is rooted in the belief that the most valuable premium experiences are built where concept, culture, partnership, and execution align.
+                EmbarqX™ is rooted in the belief that the most valuable premium experiences are built where concept, culture, partnership, and execution align.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                The vision behind EmbarqX is not to become another generic cruise brand. It is to create a platform that originates distinctive voyage concepts, aligns the right partners around them, and turns strong ideas into experiences with repeatable long-term value.
+                The vision behind EmbarqX™ is not to become another generic cruise brand. It is to create a platform that originates distinctive voyage concepts, aligns the right partners around them, and turns strong ideas into experiences with repeatable long-term value.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 That means thinking beyond transactions and beyond one-time events. It means building with intention — choosing the right concepts, selecting the right partners, and designing experiences that people do not just attend, but identify with.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                At its core, EmbarqX is about creating a more strategic and elevated model for themed travel — one where premium experiences can become lasting platform assets rather than isolated moments.
+                At its core, EmbarqX™ is about creating a more strategic and elevated model for themed travel — one where premium experiences can become lasting platform assets rather than isolated moments.
               </p>
             </motion.div>
           </div>
@@ -180,7 +180,7 @@ const About = () => (
         <div className="container mx-auto px-6">
           <motion.div {...fadeUp} className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold !text-[hsl(212,60%,7%)]">
-              What EmbarqX believes
+              What EmbarqX™ believes
             </h2>
             <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mt-4">
               The platform is built around a few core ideas that shape every concept, partnership, and experience.
@@ -213,16 +213,16 @@ const About = () => (
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-                How EmbarqX thinks about partnerships
+                How EmbarqX™ thinks about partnerships
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                EmbarqX is not designed for every possible partner. It is designed for the right ones — operators, investors, sponsors, and talent-side collaborators who understand the value of building differentiated premium experiences with long-term potential.
+                EmbarqX™ is not designed for every possible partner. It is designed for the right ones — operators, investors, sponsors, and talent-side collaborators who understand the value of building differentiated premium experiences with long-term potential.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 The best partnerships are not purely transactional. They are aligned around concept quality, audience relevance, premium execution, and the opportunity to create something that can grow beyond a single activation.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-                That is why EmbarqX places so much importance on strategic fit, selective alignment, and building with partners who see both the creative and commercial value of a premium platform approach.
+                That is why EmbarqX™ places so much importance on strategic fit, selective alignment, and building with partners who see both the creative and commercial value of a premium platform approach.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -267,7 +267,7 @@ const About = () => (
                 The long-term ambition
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                The ambition behind EmbarqX is to build more than a single concept or narrow category. It is to create a premium themed voyage platform with the ability to launch, refine, and expand differentiated experiences across multiple high-engagement audiences over time.
+                The ambition behind EmbarqX™ is to build more than a single concept or narrow category. It is to create a premium themed voyage platform with the ability to launch, refine, and expand differentiated experiences across multiple high-engagement audiences over time.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 That includes flagship activations, recurring themed voyages, broader partner ecosystems, and stronger long-term brand value built around concepts that resonate deeply with the communities they serve.
@@ -316,14 +316,14 @@ const About = () => (
               Build something with lasting value
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-              EmbarqX is designed for the right partners, collaborators, and investors who believe premium experiences can become much more than one-time moments when they are built with strong concepts, aligned partnerships, and long-term vision.
+              EmbarqX™ is designed for the right partners, collaborators, and investors who believe premium experiences can become much more than one-time moments when they are built with strong concepts, aligned partnerships, and long-term vision.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
-                Partner With EmbarqX
+                Partner With EmbarqX™
               </Link>
               <Link
                 to="/contact"

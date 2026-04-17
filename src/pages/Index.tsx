@@ -5,7 +5,7 @@ import PositioningStrip from "@/components/sections/PositioningStrip";
 import VisionSection from "@/components/sections/VisionSection";
 import WhatWeCreate from "@/components/sections/WhatWeCreate";
 import ConceptsCarousel from "@/components/sections/ConceptsCarousel";
-import WhyEmbarqX from "@/components/sections/WhyEmbarqX";
+import WhyEmbarqX™ from "@/components/sections/WhyEmbarqX™";
 import HowItWorks from "@/components/sections/HowItWorks";
 import PartnerTypes from "@/components/sections/PartnerTypes";
 import ShipsShowcase from "@/components/sections/ShipsShowcase";
@@ -21,7 +21,7 @@ const Index = () => (
       <VisionSection />
       <WhatWeCreate />
       <ConceptsCarousel />
-      <WhyEmbarqX />
+      <WhyEmbarqX™ />
       <HowItWorks />
       <PartnerTypes />
       <ShipsShowcase />

@@ -127,14 +127,14 @@ const Ships = () => {
                 The environments that shape premium experiences at sea.
               </h1>
               <p className="font-body text-lg md:text-xl text-[#B8C4D1] leading-relaxed max-w-2xl mx-auto mb-10">
-                EmbarqX is designed for premium voyage environments that can support immersive programming, differentiated hospitality, and audience experiences at multiple levels of scale.
+                EmbarqX™ is designed for premium voyage environments that can support immersive programming, differentiated hospitality, and audience experiences at multiple levels of scale.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-[#B89B5E] hover:bg-[#A08A50] text-[#061321] font-body font-semibold tracking-wide px-8 py-6 text-base">
                   <Link to="/experiences">Explore the Concepts</Link>
                 </Button>
                 <Button asChild variant="outline" className="border-[#B89B5E]/30 text-[#F3EEE4] hover:bg-[#B89B5E]/10 font-body tracking-wide px-8 py-6 text-base">
-                  <Link to="/partners">Partner With EmbarqX</Link>
+                  <Link to="/partners">Partner With EmbarqX™</Link>
                 </Button>
               </div>
             </motion.div>
@@ -152,7 +152,7 @@ const Ships = () => {
                   A premium voyage is shaped by more than its theme. The physical environment influences intimacy, energy, programming possibilities, hospitality level, sponsor integration, and the overall emotional feel of the experience.
                 </p>
                 <p className="font-body text-[#B8C4D1] leading-relaxed">
-                  That is why EmbarqX thinks carefully about vessel environments and onboard spaces. The right setting can strengthen audience fit, elevate perceived value, and create a more differentiated premium experience from the very first impression.
+                  That is why EmbarqX™ thinks carefully about vessel environments and onboard spaces. The right setting can strengthen audience fit, elevate perceived value, and create a more differentiated premium experience from the very first impression.
                 </p>
               </motion.div>
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fade} custom={0.2}>
@@ -171,7 +171,7 @@ const Ships = () => {
               <p className="font-body text-sm tracking-[0.25em] uppercase text-[#B89B5E] mb-4">Experience Environments</p>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F3EEE4] mb-4">Three classes of experience environment</h2>
               <p className="font-body text-[#B8C4D1] max-w-3xl mx-auto">
-                Different concepts thrive in different environments. EmbarqX is designed to work across multiple levels of scale, as long as the setting supports the right audience, atmosphere, and hospitality experience.
+                Different concepts thrive in different environments. EmbarqX™ is designed to work across multiple levels of scale, as long as the setting supports the right audience, atmosphere, and hospitality experience.
               </p>
             </motion.div>
 
@@ -262,7 +262,7 @@ const Ships = () => {
               <p className="font-body text-sm tracking-[0.25em] uppercase text-[#B89B5E] mb-4">Strategic Fit</p>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F3EEE4] mb-4">Matching concepts to the right environments</h2>
               <p className="font-body text-[#B8C4D1] max-w-3xl mx-auto">
-                A concept becomes stronger when the physical setting supports its audience, programming, and emotional tone. EmbarqX is designed to think strategically about that fit.
+                A concept becomes stronger when the physical setting supports its audience, programming, and emotional tone. EmbarqX™ is designed to think strategically about that fit.
               </p>
             </motion.div>
 
@@ -296,7 +296,7 @@ const Ships = () => {
               <p className="font-body text-sm tracking-[0.25em] uppercase text-[#B89B5E] mb-4">Illustrative Possibilities</p>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-[#F3EEE4] mb-4">Illustrative vessel possibilities</h2>
               <p className="font-body text-[#B8C4D1] max-w-3xl mx-auto">
-                The examples on this page are intended to show the scale and caliber of environment EmbarqX is built for. They are illustrative, not confirmations of specific vessels or partnerships.
+                The examples on this page are intended to show the scale and caliber of environment EmbarqX™ is built for. They are illustrative, not confirmations of specific vessels or partnerships.
               </p>
             </motion.div>
 
@@ -383,7 +383,7 @@ const Ships = () => {
                 The right environment can elevate the entire concept
               </h2>
               <p className="font-body text-[#B8C4D1] leading-relaxed mb-10 max-w-xl mx-auto">
-                EmbarqX is designed for premium voyage settings where concept, audience, hospitality, and programming can come together at the highest level.
+                EmbarqX™ is designed for premium voyage settings where concept, audience, hospitality, and programming can come together at the highest level.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild className="bg-[#B89B5E] hover:bg-[#A08A50] text-[#061321] font-body font-semibold tracking-wide px-8 py-6 text-base">
