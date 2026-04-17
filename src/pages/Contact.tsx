@@ -458,6 +458,7 @@ const Contact = () => {
                   {isSubmitting ? "Sending..." : "Start the Conversation"} <Send className="ml-2 w-5 h-5" />
                 </Button>
               </form>
+              )}
             </motion.div>
           </div>
         </section>
