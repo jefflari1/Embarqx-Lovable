@@ -384,6 +384,17 @@ const Contact = () => {
                   />
                 </div>
 
+                {/* Phone / WhatsApp */}
+                <div className="space-y-2">
+                  <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                    <Phone className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Phone / WhatsApp *
+                  </Label>
+                  <Input
+                    required name="phone" placeholder="+1 (555) 000-0000"
+                    className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
+                  />
+                </div>
+
                 {/* Inquiry Type */}
                 <div className="space-y-2">
                   <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Inquiry Type *</Label>
@@ -420,16 +431,7 @@ const Contact = () => {
                 {/* Optional fields */}
                 <div className="border-t pt-6" style={{ borderColor: "hsl(210 20% 80%)" }}>
                   <p className="font-body text-xs uppercase tracking-[0.2em] mb-4" style={{ color: "hsl(40 40% 45%)" }}>Optional</p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="space-y-2">
-                      <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
-                        <Phone className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Phone / WhatsApp *
-                      </Label>
-                      <Input
-                        required name="phone" placeholder="+1 (555) 000-0000"
-                        className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
-                      />
-                    </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
                         <Globe className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Website
