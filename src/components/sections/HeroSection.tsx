@@ -82,7 +82,7 @@ const HeroSection = () => (
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3"
+          className="mt-12 flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-6 xl:gap-x-10 gap-y-3"
         >
           {[
             "Celebrity-led concepts",
@@ -90,8 +90,8 @@ const HeroSection = () => (
             "Sponsor-integrated experiences",
             "Repeatable platform economics",
           ].map((item, i) => (
-            <span key={i} className="flex items-center gap-2 font-body text-sm tracking-wide text-[#B8C4D1]/80">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold/60" />
+            <span key={i} className="flex items-center gap-2 font-body text-sm font-medium tracking-wide text-[#D5DEE8] lg:whitespace-nowrap">
+              <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
               {item}
             </span>
           ))}
