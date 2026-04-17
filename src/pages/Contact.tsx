@@ -431,7 +431,9 @@ const Contact = () => {
 
                 {/* Message */}
                 <div className="space-y-2">
-                  <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Message *</Label>
+                  <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                    <MessageSquare className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Message *
+                  </Label>
                   <Textarea
                     required name="message" rows={5}
                     placeholder="Share a brief overview of your interest and what you'd like to explore with EmbarqX™."
