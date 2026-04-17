@@ -307,6 +307,46 @@ const Contact = () => {
               className="max-w-2xl mx-auto"
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={1}
             >
+              {isSuccess ? (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="rounded-2xl border p-10 md:p-14 text-center"
+                  style={{
+                    background: "linear-gradient(160deg, #ffffff 0%, rgba(245,241,232,0.7) 100%)",
+                    borderColor: "hsl(40 40% 75%)",
+                    boxShadow: "0 30px 80px -40px hsl(212 60% 7% / 0.25)",
+                  }}
+                >
+                  <div
+                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                    style={{ background: "hsl(40 40% 55% / 0.12)" }}
+                  >
+                    <CheckCircle className="w-8 h-8" style={{ color: "hsl(40 40% 45%)" }} />
+                  </div>
+                  <p className="font-body text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(40 40% 45%)" }}>
+                    Inquiry received
+                  </p>
+                  <h3 className="font-display text-3xl md:text-4xl font-bold mb-5 leading-tight" style={{ color: "hsl(212 60% 7%)" }}>
+                    Your message is on its way.
+                  </h3>
+                  <p className="font-body text-base md:text-lg leading-relaxed mb-5 max-w-xl mx-auto" style={{ color: "hsl(210 20% 30%)" }}>
+                    Thank you for reaching out to EmbarqX™. We have received your inquiry and appreciate your interest. Our team will review your message carefully and be in touch soon to continue the conversation.
+                  </p>
+                  <p className="font-body text-sm md:text-base italic leading-relaxed max-w-xl mx-auto mb-8" style={{ color: "hsl(210 20% 40%)" }}>
+                    We look forward to learning more about what you're building and exploring how we can create something exceptional together.
+                  </p>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => setIsSuccess(false)}
+                    className="font-body border-[hsl(212_60%_7%)] text-[hsl(212_60%_7%)] hover:bg-[hsl(212_60%_7%)] hover:text-foreground"
+                  >
+                    Send another message
+                  </Button>
+                </motion.div>
+              ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Full Name */}
                 <div className="space-y-2">
