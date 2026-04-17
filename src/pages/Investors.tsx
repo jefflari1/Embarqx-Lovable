@@ -87,12 +87,12 @@ const valueLayers = [
 ];
 
 const standsApart = [
-  { icon: Users, title: "Audience-led demand", text: "EmbarqX™ is designed around communities with strong identity, emotional pull, and the potential to create premium demand beyond generic cruise marketing." },
+  { icon: Users, title: "Audience-led demand", text: "EmbarqX is designed around communities with strong identity, emotional pull, and the potential to create premium demand beyond generic cruise marketing." },
   { icon: Star, title: "Identity-driven experiences", text: "The strongest voyages are built around experiences people identify with, not just attend, creating deeper engagement and stronger long-term value." },
-  { icon: Layers, title: "A platform, not a one-off", text: "EmbarqX™ is structured to turn flagship activations into recurring voyage concepts with broader portfolio potential over time." },
-  { icon: Gem, title: "Differentiated premium positioning", text: "By combining talent, concept, programming, and audience relevance, EmbarqX™ creates premium voyages that stand apart from standard themed travel offers." },
+  { icon: Layers, title: "A platform, not a one-off", text: "EmbarqX is structured to turn flagship activations into recurring voyage concepts with broader portfolio potential over time." },
+  { icon: Gem, title: "Differentiated premium positioning", text: "By combining talent, concept, programming, and audience relevance, EmbarqX creates premium voyages that stand apart from standard themed travel offers." },
   { icon: BarChart3, title: "Multi-layer value creation", text: "Each concept is designed to create value through premium ticketing, partnerships, sponsorship, programming, repeat launches, and broader platform upside." },
-  { icon: Shield, title: "Built for the right partners", text: "EmbarqX™ is designed to align the right operators, investors, sponsors, and talent-side collaborators around concepts with lasting strategic value." },
+  { icon: Shield, title: "Built for the right partners", text: "EmbarqX is designed to align the right operators, investors, sponsors, and talent-side collaborators around concepts with lasting strategic value." },
 ];
 
 const roadmapSteps = [
@@ -342,7 +342,7 @@ const Investors = () => {
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-                Why EmbarqX™ stands apart
+                Why EmbarqX stands apart
               </h2>
             </motion.div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 max-w-5xl mx-auto">

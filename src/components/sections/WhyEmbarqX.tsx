@@ -23,7 +23,7 @@ const WhyEmbarqX = () => (
           Strategic Value
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold" style={{ color: '#0B1E33' }}>
-          Why EmbarqX™
+          Why EmbarqX
         </h2>
         <p className="font-body text-base md:text-lg text-[#3A5068] max-w-3xl mx-auto mt-6 leading-relaxed">
           Six reasons the model is built differently — and designed to last.
