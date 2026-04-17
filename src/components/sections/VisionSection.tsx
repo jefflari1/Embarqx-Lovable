@@ -32,7 +32,7 @@ const VisionSection = () => (
           The Vision
         </p>
         <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-          The Vision Behind EmbarqX™
+          The Vision Behind EmbarqX
         </h2>
         <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
           EmbarqX™ is a premium themed cruise platform — turning culture-led concepts into a repeatable portfolio of flagship voyages at sea.

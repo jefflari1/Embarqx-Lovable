@@ -132,7 +132,7 @@ const FAQ = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
-                Partner With EmbarqX™
+                Partner With EmbarqX
               </Link>
               <Link
                 to="/contact"
@@ -222,7 +222,7 @@ const FAQ = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
-                Partner With EmbarqX™
+                Partner With EmbarqX
               </Link>
             </div>
           </motion.div>

@@ -62,10 +62,10 @@ const valueLayers = [
 ];
 
 const modelBlocks = [
-  { icon: Users, title: "Audience-led demand", text: "EmbarqX™ is designed around communities with strong identity, emotional pull, and premium demand potential." },
+  { icon: Users, title: "Audience-led demand", text: "EmbarqX is designed around communities with strong identity, emotional pull, and premium demand potential." },
   { icon: Star, title: "Identity-driven experiences", text: "The strongest voyages are built around experiences people identify with, not just attend." },
   { icon: Layers, title: "Platform, not one-off", text: "Each concept is structured with recurring value and future expansion in mind." },
-  { icon: Target, title: "Differentiated premium positioning", text: "EmbarqX™ is designed to stand apart from generic themed travel through stronger concept clarity and premium experience design." },
+  { icon: Target, title: "Differentiated premium positioning", text: "EmbarqX is designed to stand apart from generic themed travel through stronger concept clarity and premium experience design." },
   { icon: Gem, title: "Multi-layer value creation", text: "Value is created through more than base ticketing, including partnerships, programming, repeat launches, and broader brand potential." },
   { icon: Shield, title: "Built for the right partners", text: "The model is designed to align the right operators, investors, sponsors, and collaborators around lasting strategic value." },
 ];
@@ -120,7 +120,7 @@ const Concept = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
-                Partner With EmbarqX™
+                Partner With EmbarqX
               </Link>
             </div>
           </motion.div>
@@ -136,7 +136,7 @@ const Concept = () => (
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-                Why EmbarqX™ exists
+                Why EmbarqX exists
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 The strongest premium travel experiences are no longer built around destination alone. They are increasingly shaped by identity, culture, community, access, and the quality of the experience itself.
@@ -395,7 +395,7 @@ const Concept = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
-                Partner With EmbarqX™
+                Partner With EmbarqX
               </Link>
             </div>
           </motion.div>

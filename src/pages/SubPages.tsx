@@ -90,7 +90,7 @@ export const GalleryPage = () => (
 
 export const AboutPage = () => (
   <PlaceholderPage
-    title="About EmbarqX™"
+    title="About EmbarqX"
     subtitle="Our Story"
     description="The vision, philosophy, and strategic intent behind the world's premier themed cruise experience platform."
   />

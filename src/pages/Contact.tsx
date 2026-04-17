@@ -107,7 +107,7 @@ const Contact = () => {
                   Start the Conversation <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button asChild variant="outline" size="lg" className="font-body text-base px-8 py-6 rounded-lg border-border text-foreground hover:bg-secondary/40">
-                  <Link to="/partners">Partner With EmbarqX™</Link>
+                  <Link to="/partners">Partner With EmbarqX</Link>
                 </Button>
               </div>
             </motion.div>
@@ -121,7 +121,7 @@ const Contact = () => {
         >
           <div className="container mx-auto px-6">
             <motion.div className="max-w-3xl mx-auto text-center" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={0}>
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">How to connect with EmbarqX™</h2>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">How to connect with EmbarqX</h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-12">
                 If there is a strategic fit, the best next step is a thoughtful conversation. Select the inquiry type that best matches your role so EmbarqX™ can better understand what you are looking to explore.
               </p>
@@ -380,7 +380,7 @@ const Contact = () => {
                   Start the Conversation <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button asChild variant="outline" size="lg" className="font-body text-base px-8 py-6 rounded-lg border-border text-foreground hover:bg-secondary/40">
-                  <Link to="/partners">Partner With EmbarqX™</Link>
+                  <Link to="/partners">Partner With EmbarqX</Link>
                 </Button>
               </div>
             </motion.div>

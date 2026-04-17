@@ -80,7 +80,7 @@ const About = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
-                Partner With EmbarqX™
+                Partner With EmbarqX
               </Link>
               <Link
                 to="/concept"
@@ -102,7 +102,7 @@ const About = () => (
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-                Why EmbarqX™ was created
+                Why EmbarqX was created
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 The strongest premium travel experiences are increasingly shaped by identity, culture, community, access, and the quality of the experience itself. Yet too many voyage concepts remain isolated activations rather than the foundation for something bigger.
@@ -180,7 +180,7 @@ const About = () => (
         <div className="container mx-auto px-6">
           <motion.div {...fadeUp} className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="font-display text-3xl md:text-5xl font-bold !text-[hsl(212,60%,7%)]">
-              What EmbarqX™ believes
+              What EmbarqX believes
             </h2>
             <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mt-4">
               The platform is built around a few core ideas that shape every concept, partnership, and experience.
@@ -213,7 +213,7 @@ const About = () => (
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-                How EmbarqX™ thinks about partnerships
+                How EmbarqX thinks about partnerships
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 EmbarqX™ is not designed for every possible partner. It is designed for the right ones — operators, investors, sponsors, and talent-side collaborators who understand the value of building differentiated premium experiences with long-term potential.
@@ -323,7 +323,7 @@ const About = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-body font-semibold tracking-wide hover:bg-primary/90 transition-colors"
               >
-                Partner With EmbarqX™
+                Partner With EmbarqX
               </Link>
               <Link
                 to="/contact"

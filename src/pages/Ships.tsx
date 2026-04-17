@@ -134,7 +134,7 @@ const Ships = () => {
                   <Link to="/experiences">Explore the Concepts</Link>
                 </Button>
                 <Button asChild variant="outline" className="border-[#B89B5E]/30 text-[#F3EEE4] hover:bg-[#B89B5E]/10 font-body tracking-wide px-8 py-6 text-base">
-                  <Link to="/partners">Partner With EmbarqX™</Link>
+                  <Link to="/partners">Partner With EmbarqX</Link>
                 </Button>
               </div>
             </motion.div>

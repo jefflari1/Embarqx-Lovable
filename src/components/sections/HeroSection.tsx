@@ -73,7 +73,7 @@ const HeroSection = () => (
             to="/partners"
             className="px-8 py-4 font-body font-semibold text-base rounded-full border border-border text-foreground hover:bg-muted transition-all"
           >
-            Partner With EmbarqX™
+            Partner With EmbarqX
           </Link>
         </motion.div>
 
