@@ -57,25 +57,118 @@ const scrollToForm = () => {
   document.getElementById("inquiry-form")?.scrollIntoView({ behavior: "smooth" });
 };
 
+// ─────────────────────────────────────────────────────────────
+// CONTACT FORM DELIVERY (portable — works on Hostinger or anywhere)
+// Uses Web3Forms (https://web3forms.com) — a free form-to-email service.
+//
+// SETUP (one-time, ~60 seconds):
+//   1. Go to https://web3forms.com and enter hello@embarqx.com
+//   2. Copy the Access Key emailed to you
+//   3. Paste it below as WEB3FORMS_ACCESS_KEY (or set VITE_WEB3FORMS_KEY
+//      in your .env file before deploying to Hostinger)
+//
+// All submissions are delivered straight to hello@embarqx.com.
+// No backend, no Lovable Cloud, fully portable static-hosting friendly.
+// ─────────────────────────────────────────────────────────────
+const WEB3FORMS_ACCESS_KEY =
+  (import.meta.env.VITE_WEB3FORMS_KEY as string | undefined) ||
+  "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
+
 const Contact = () => {
   const { toast } = useToast();
   const [selectedType, setSelectedType] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const supportLine = inquiryTypes.find(t => t.value === selectedType)?.support;
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    if (isSubmitting) return; // prevent duplicate submissions
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    if (!selectedType) {
       toast({
-        title: "Inquiry received",
-        description: "Thank you. EmbarqX™ will review your inquiry and respond if there is strategic alignment.",
+        title: "Please select an inquiry type",
+        description: "This helps us route your message to the right team.",
+        variant: "destructive",
       });
-      (e.target as HTMLFormElement).reset();
+      return;
+    }
+
+    // Compose payload for Web3Forms
+    const inquiryLabel =
+      inquiryTypes.find(t => t.value === selectedType)?.label || selectedType;
+    const fullName = String(formData.get("name") || "").trim();
+
+    const payload: Record<string, string> = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: `New EmbarqX Inquiry: ${fullName} | ${inquiryLabel}`,
+      from_name: "EmbarqX Website",
+      replyto: String(formData.get("email") || ""),
+      "Full Name": fullName,
+      "Company / Organization": String(formData.get("company") || ""),
+      "Role / Title": String(formData.get("role") || ""),
+      "Email Address": String(formData.get("email") || ""),
+      "Inquiry Type": inquiryLabel,
+      Message: String(formData.get("message") || ""),
+      "Phone / WhatsApp": String(formData.get("phone") || "—"),
+      Website: String(formData.get("website") || "—"),
+      Location: String(formData.get("location") || "—"),
+      "Submitted At": new Date().toLocaleString("en-US", {
+        dateStyle: "full",
+        timeStyle: "short",
+      }),
+    };
+
+    setIsSubmitting(true);
+    try {
+      if (
+        !WEB3FORMS_ACCESS_KEY ||
+        WEB3FORMS_ACCESS_KEY === "YOUR_WEB3FORMS_ACCESS_KEY_HERE"
+      ) {
+        throw new Error(
+          "Form not configured. Please add your Web3Forms access key.",
+        );
+      }
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data?.message || "Submission failed");
+      }
+
+      form.reset();
       setSelectedType("");
-    }, 1500);
+      setIsSuccess(true);
+      // smooth scroll success state into view
+      setTimeout(() => {
+        document
+          .getElementById("inquiry-form")
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 50);
+    } catch (err) {
+      toast({
+        title: "Something went wrong",
+        description:
+          err instanceof Error
+            ? err.message
+            : "Please try again in a moment, or email hello@embarqx.com directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -214,6 +307,46 @@ const Contact = () => {
               className="max-w-2xl mx-auto"
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={1}
             >
+              {isSuccess ? (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="rounded-2xl border p-10 md:p-14 text-center"
+                  style={{
+                    background: "linear-gradient(160deg, #ffffff 0%, rgba(245,241,232,0.7) 100%)",
+                    borderColor: "hsl(40 40% 75%)",
+                    boxShadow: "0 30px 80px -40px hsl(212 60% 7% / 0.25)",
+                  }}
+                >
+                  <div
+                    className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6"
+                    style={{ background: "hsl(40 40% 55% / 0.12)" }}
+                  >
+                    <CheckCircle className="w-8 h-8" style={{ color: "hsl(40 40% 45%)" }} />
+                  </div>
+                  <p className="font-body text-xs tracking-[0.3em] uppercase mb-4" style={{ color: "hsl(40 40% 45%)" }}>
+                    Inquiry received
+                  </p>
+                  <h3 className="font-display text-3xl md:text-4xl font-bold mb-5 leading-tight" style={{ color: "hsl(212 60% 7%)" }}>
+                    Your message is on its way.
+                  </h3>
+                  <p className="font-body text-base md:text-lg leading-relaxed mb-5 max-w-xl mx-auto" style={{ color: "hsl(210 20% 30%)" }}>
+                    Thank you for reaching out to EmbarqX™. We have received your inquiry and appreciate your interest. Our team will review your message carefully and be in touch soon to continue the conversation.
+                  </p>
+                  <p className="font-body text-sm md:text-base italic leading-relaxed max-w-xl mx-auto mb-8" style={{ color: "hsl(210 20% 40%)" }}>
+                    We look forward to learning more about what you're building and exploring how we can create something exceptional together.
+                  </p>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => setIsSuccess(false)}
+                    className="font-body border-[hsl(212_60%_7%)] text-[hsl(212_60%_7%)] hover:bg-[hsl(212_60%_7%)] hover:text-foreground"
+                  >
+                    Send another message
+                  </Button>
+                </motion.div>
+              ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Full Name */}
                 <div className="space-y-2">
@@ -325,6 +458,7 @@ const Contact = () => {
                   {isSubmitting ? "Sending..." : "Start the Conversation"} <Send className="ml-2 w-5 h-5" />
                 </Button>
               </form>
+              )}
             </motion.div>
           </div>
         </section>
