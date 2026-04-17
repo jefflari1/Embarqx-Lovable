@@ -10,7 +10,7 @@ const reasons = [
   { icon: Shield, title: "Built for the Right Partners", description: "Operators, investors, sponsors, and collaborators aligned around concepts with lasting strategic value." },
 ];
 
-const WhyEmbarqX™ = () => (
+const WhyEmbarqX = () => (
   <section className="py-24" style={{ background: 'rgba(245,241,232,0.94)' }}>
     <div className="container mx-auto px-6">
       <motion.div
@@ -52,4 +52,4 @@ const WhyEmbarqX™ = () => (
   </section>
 );
 
-export default WhyEmbarqX™;
+export default WhyEmbarqX;
