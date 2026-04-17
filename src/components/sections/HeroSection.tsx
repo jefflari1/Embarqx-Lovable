@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-ship.jpg";
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#061321]">
     {/* Background */}
     <div className="absolute inset-0">
       <video
         src="/hero-video.mp4"
-        poster={heroImage}
+        poster="/hero-poster.jpg"
         autoPlay
         muted
         loop
