@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
   Anchor, TrendingUp, Megaphone, Star, Handshake, MessageCircle,
-  Mail, Phone, ArrowRight, CheckCircle, Send, Globe, MapPin, User
+  Mail, Phone, ArrowRight, CheckCircle, Send, Globe, MapPin, User,
+  Building2, Briefcase, ListChecks, MessageSquare
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -350,7 +351,9 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Full Name */}
                 <div className="space-y-2">
-                  <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Full Name *</Label>
+                  <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                    <User className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Full Name *
+                  </Label>
                   <Input
                     required name="name" placeholder="Your full name"
                     className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
@@ -360,14 +363,18 @@ const Contact = () => {
                 {/* Company + Role */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Company / Organization *</Label>
+                    <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                      <Building2 className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Company / Organization *
+                    </Label>
                     <Input
                       required name="company" placeholder="Your organization"
                       className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Role / Title (Optional)</Label>
+                    <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                      <Briefcase className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Role / Title (Optional)
+                    </Label>
                     <Input
                       name="role" placeholder="Your role"
                       className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
@@ -377,7 +384,9 @@ const Contact = () => {
 
                 {/* Email */}
                 <div className="space-y-2">
-                  <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Email Address *</Label>
+                  <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                    <Mail className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Email Address *
+                  </Label>
                   <Input
                     required type="email" name="email" placeholder="you@company.com"
                     className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
@@ -397,7 +406,9 @@ const Contact = () => {
 
                 {/* Inquiry Type */}
                 <div className="space-y-2">
-                  <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Inquiry Type *</Label>
+                  <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                    <ListChecks className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Inquiry Type *
+                  </Label>
                   <Select required value={selectedType} onValueChange={setSelectedType}>
                     <SelectTrigger className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] focus:ring-primary">
                       <SelectValue placeholder="Select inquiry type" />
