@@ -384,6 +384,17 @@ const Contact = () => {
                   />
                 </div>
 
+                {/* Phone / WhatsApp */}
+                <div className="space-y-2">
+                  <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
+                    <Phone className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Phone / WhatsApp *
+                  </Label>
+                  <Input
+                    required name="phone" placeholder="+1 (555) 000-0000"
+                    className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
+                  />
+                </div>
+
                 {/* Inquiry Type */}
                 <div className="space-y-2">
                   <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Inquiry Type *</Label>
