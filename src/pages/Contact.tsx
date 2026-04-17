@@ -367,9 +367,9 @@ const Contact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Role / Title *</Label>
+                    <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Role / Title (Optional)</Label>
                     <Input
-                      required name="role" placeholder="Your role"
+                      name="role" placeholder="Your role"
                       className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
                     />
                   </div>
@@ -423,10 +423,10 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="space-y-2">
                       <Label className="font-body text-sm font-medium flex items-center gap-2" style={{ color: "hsl(212 60% 7%)" }}>
-                        <Phone className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Phone / WhatsApp
+                        <Phone className="w-3.5 h-3.5" style={{ color: "hsl(40 40% 55%)" }} /> Phone / WhatsApp *
                       </Label>
                       <Input
-                        name="phone" placeholder="+1 (555) 000-0000"
+                        required name="phone" placeholder="+1 (555) 000-0000"
                         className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary"
                       />
                     </div>
