@@ -87,12 +87,12 @@ const valueLayers = [
 ];
 
 const standsApart = [
-  { icon: Users, title: "Audience-led demand", text: "EmbarqX is designed around communities with strong identity, emotional pull, and the potential to create premium demand beyond generic cruise marketing." },
+  { icon: Users, title: "Audience-led demand", text: "EmbarqX™ is designed around communities with strong identity, emotional pull, and the potential to create premium demand beyond generic cruise marketing." },
   { icon: Star, title: "Identity-driven experiences", text: "The strongest voyages are built around experiences people identify with, not just attend, creating deeper engagement and stronger long-term value." },
-  { icon: Layers, title: "A platform, not a one-off", text: "EmbarqX is structured to turn flagship activations into recurring voyage concepts with broader portfolio potential over time." },
-  { icon: Gem, title: "Differentiated premium positioning", text: "By combining talent, concept, programming, and audience relevance, EmbarqX creates premium voyages that stand apart from standard themed travel offers." },
+  { icon: Layers, title: "A platform, not a one-off", text: "EmbarqX™ is structured to turn flagship activations into recurring voyage concepts with broader portfolio potential over time." },
+  { icon: Gem, title: "Differentiated premium positioning", text: "By combining talent, concept, programming, and audience relevance, EmbarqX™ creates premium voyages that stand apart from standard themed travel offers." },
   { icon: BarChart3, title: "Multi-layer value creation", text: "Each concept is designed to create value through premium ticketing, partnerships, sponsorship, programming, repeat launches, and broader platform upside." },
-  { icon: Shield, title: "Built for the right partners", text: "EmbarqX is designed to align the right operators, investors, sponsors, and talent-side collaborators around concepts with lasting strategic value." },
+  { icon: Shield, title: "Built for the right partners", text: "EmbarqX™ is designed to align the right operators, investors, sponsors, and talent-side collaborators around concepts with lasting strategic value." },
 ];
 
 const roadmapSteps = [
@@ -161,7 +161,7 @@ const Investors = () => {
                 A premium platform built for repeatable value at sea.
               </h1>
               <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto">
-                EmbarqX is building a premium themed cruise platform designed to turn flagship concepts into recurring experiences with differentiated positioning, multi-layer monetization, and long-term brand potential.
+                EmbarqX™ is building a premium themed cruise platform designed to turn flagship concepts into recurring experiences with differentiated positioning, multi-layer monetization, and long-term brand potential.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -256,7 +256,7 @@ const Investors = () => {
                     More than a single sailing. A platform.
                   </h2>
                   <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                    EmbarqX is not built around one isolated event. It is designed as a premium concept platform capable of launching flagship voyages and expanding into a recurring portfolio of themed experiences over time.
+                    EmbarqX™ is not built around one isolated event. It is designed as a premium concept platform capable of launching flagship voyages and expanding into a recurring portfolio of themed experiences over time.
                   </p>
                 </motion.div>
 
@@ -293,7 +293,7 @@ const Investors = () => {
                 A multi-layer value model
               </h2>
               <p className="font-body text-lg !text-[hsl(212,25%,35%)] leading-relaxed">
-                EmbarqX is designed to create value through more than ticket sales alone.
+                EmbarqX™ is designed to create value through more than ticket sales alone.
               </p>
             </motion.div>
 
@@ -342,7 +342,7 @@ const Investors = () => {
           <div className="container mx-auto px-6">
             <motion.div {...fadeUp} className="max-w-3xl mx-auto text-center mb-16">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-                Why EmbarqX stands apart
+                Why EmbarqX™ stands apart
               </h2>
             </motion.div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 max-w-5xl mx-auto">
@@ -416,7 +416,7 @@ const Investors = () => {
                 A diversified premium concept portfolio
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                EmbarqX is designed to reduce dependence on a single audience or moment by building across multiple high-engagement thematic lanes.
+                EmbarqX™ is designed to reduce dependence on a single audience or moment by building across multiple high-engagement thematic lanes.
               </p>
             </motion.div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-5xl mx-auto mb-10">
@@ -448,7 +448,7 @@ const Investors = () => {
                 What the right investor is backing
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-                An investment in EmbarqX is not simply a bet on a single voyage. It is a bet on a differentiated premium experience platform built to align concept creation, strategic partnerships, audience relevance, and recurring long-term value.
+                An investment in EmbarqX™ is not simply a bet on a single voyage. It is a bet on a differentiated premium experience platform built to align concept creation, strategic partnerships, audience relevance, and recurring long-term value.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto text-left">
                 {backingBullets.map((b, i) => (
@@ -498,7 +498,7 @@ const Investors = () => {
                 For investors who see the value of premium experience platforms
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-12">
-                EmbarqX is designed for investors who understand the long-term opportunity in differentiated, identity-driven travel experiences and the value of building beyond one-time activations.
+                EmbarqX™ is designed for investors who understand the long-term opportunity in differentiated, identity-driven travel experiences and the value of building beyond one-time activations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

@@ -52,7 +52,7 @@ const HeroSection = () => (
           transition={{ delay: 0.6, duration: 0.8 }}
           className="font-body text-lg md:text-xl text-[#B8C4D1] max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          EmbarqX creates high-impact themed cruise concepts that unite talent,
+          EmbarqX™ creates high-impact themed cruise concepts that unite talent,
           community, hospitality, and commercial strategy into premium voyages
           built for long-term platform value.
         </motion.p>
@@ -73,7 +73,7 @@ const HeroSection = () => (
             to="/partners"
             className="px-8 py-4 font-body font-semibold text-base rounded-full border border-border text-foreground hover:bg-muted transition-all"
           >
-            Partner With EmbarqX
+            Partner With EmbarqX™
           </Link>
         </motion.div>
 

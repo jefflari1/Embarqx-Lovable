@@ -17,7 +17,7 @@ const PositioningStrip = () => (
           A Platform for Premium Themed Cruise Experiences
         </h2>
         <p className="font-body text-[#B8C4D1] text-lg leading-relaxed">
-          EmbarqX sits at the intersection of entertainment, hospitality, community,
+          EmbarqX™ sits at the intersection of entertainment, hospitality, community,
           and commerce — designing experiences people don't just attend, but identify with.
         </p>
       </motion.div>

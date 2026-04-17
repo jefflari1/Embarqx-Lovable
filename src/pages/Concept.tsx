@@ -62,10 +62,10 @@ const valueLayers = [
 ];
 
 const modelBlocks = [
-  { icon: Users, title: "Audience-led demand", text: "EmbarqX is designed around communities with strong identity, emotional pull, and premium demand potential." },
+  { icon: Users, title: "Audience-led demand", text: "EmbarqX™ is designed around communities with strong identity, emotional pull, and premium demand potential." },
   { icon: Star, title: "Identity-driven experiences", text: "The strongest voyages are built around experiences people identify with, not just attend." },
   { icon: Layers, title: "Platform, not one-off", text: "Each concept is structured with recurring value and future expansion in mind." },
-  { icon: Target, title: "Differentiated premium positioning", text: "EmbarqX is designed to stand apart from generic themed travel through stronger concept clarity and premium experience design." },
+  { icon: Target, title: "Differentiated premium positioning", text: "EmbarqX™ is designed to stand apart from generic themed travel through stronger concept clarity and premium experience design." },
   { icon: Gem, title: "Multi-layer value creation", text: "Value is created through more than base ticketing, including partnerships, programming, repeat launches, and broader brand potential." },
   { icon: Shield, title: "Built for the right partners", text: "The model is designed to align the right operators, investors, sponsors, and collaborators around lasting strategic value." },
 ];
@@ -107,7 +107,7 @@ const Concept = () => (
               More than a voyage. A premium platform at sea.
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              EmbarqX is building a premium themed cruise platform designed to turn strong concepts, aligned partnerships, and audience-driven experiences into recurring long-term value.
+              EmbarqX™ is building a premium themed cruise platform designed to turn strong concepts, aligned partnerships, and audience-driven experiences into recurring long-term value.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -120,7 +120,7 @@ const Concept = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
-                Partner With EmbarqX
+                Partner With EmbarqX™
               </Link>
             </div>
           </motion.div>
@@ -136,13 +136,13 @@ const Concept = () => (
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeUp}>
               <h2 className="font-display text-3xl md:text-5xl font-bold mb-8">
-                Why EmbarqX exists
+                Why EmbarqX™ exists
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 The strongest premium travel experiences are no longer built around destination alone. They are increasingly shaped by identity, culture, community, access, and the quality of the experience itself.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                Yet too many voyage ideas remain isolated activations rather than the foundation for something bigger. EmbarqX was created to build a more intentional model, one where strong concepts, premium hospitality, curated programming, and the right partnerships can come together as part of a platform designed to grow over time.
+                Yet too many voyage ideas remain isolated activations rather than the foundation for something bigger. EmbarqX™ was created to build a more intentional model, one where strong concepts, premium hospitality, curated programming, and the right partnerships can come together as part of a platform designed to grow over time.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
                 This is not about creating a single memorable sailing. It is about building a premium experience platform capable of launching differentiated voyages with stronger audience resonance, broader commercial potential, and lasting platform value.
@@ -176,7 +176,7 @@ const Concept = () => (
               More than a one-off sailing
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              EmbarqX is not designed around isolated activations. It is built as a platform capable of launching flagship concepts and growing them into recurring premium experiences over time.
+              EmbarqX™ is not designed around isolated activations. It is built as a platform capable of launching flagship concepts and growing them into recurring premium experiences over time.
             </p>
           </motion.div>
 
@@ -218,7 +218,7 @@ const Concept = () => (
               How the platform comes together
             </h2>
             <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mt-6">
-              EmbarqX brings together the core elements of a premium themed voyage into one aligned platform, transforming concepts into experiences with deeper audience connection and broader long-term value.
+              EmbarqX™ brings together the core elements of a premium themed voyage into one aligned platform, transforming concepts into experiences with deeper audience connection and broader long-term value.
             </p>
           </motion.div>
 
@@ -237,7 +237,7 @@ const Concept = () => (
           </div>
 
           <motion.p {...fadeUp} className="font-body text-center text-[hsl(212,25%,35%)] text-lg leading-relaxed max-w-3xl mx-auto italic">
-            EmbarqX is built to connect these elements into a platform that can launch strong flagship experiences and grow into a repeatable portfolio over time.
+            EmbarqX™ is built to connect these elements into a platform that can launch strong flagship experiences and grow into a repeatable portfolio over time.
           </motion.p>
         </div>
       </section>
@@ -254,7 +254,7 @@ const Concept = () => (
                 How value is created
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-                EmbarqX is designed to create value through more than ticket sales alone.
+                EmbarqX™ is designed to create value through more than ticket sales alone.
               </p>
 
               <div className="space-y-4">
@@ -305,7 +305,7 @@ const Concept = () => (
               Why the model is different
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              What makes EmbarqX distinct is its ability to align audience, concept, partnerships, and premium experience design into a platform built for more than one event.
+              What makes EmbarqX™ distinct is its ability to align audience, concept, partnerships, and premium experience design into a platform built for more than one event.
             </p>
           </motion.div>
 
@@ -382,7 +382,7 @@ const Concept = () => (
               The right concept can become much more than a single voyage
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-              EmbarqX is designed to transform differentiated premium concepts into recurring experiences with stronger audience connection, broader commercial potential, and long-term platform value.
+              EmbarqX™ is designed to transform differentiated premium concepts into recurring experiences with stronger audience connection, broader commercial potential, and long-term platform value.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -395,7 +395,7 @@ const Concept = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
-                Partner With EmbarqX
+                Partner With EmbarqX™
               </Link>
             </div>
           </motion.div>

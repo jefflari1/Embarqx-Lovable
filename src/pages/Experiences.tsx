@@ -118,7 +118,7 @@ const concepts: ConceptSection[] = [
       "Premium hospitality designed for renewal and intentionality",
     ],
     whyMatters:
-      "Wellness and consciousness concepts expand EmbarqX beyond entertainment into high-value transformational travel, attracting audiences seeking meaning, connection, and elevated environments that can support recurring premium experiences.",
+      "Wellness and consciousness concepts expand EmbarqX™ beyond entertainment into high-value transformational travel, attracting audiences seeking meaning, connection, and elevated environments that can support recurring premium experiences.",
     image: wellnessImg,
     icon: Flower2,
   },
@@ -159,7 +159,7 @@ const concepts: ConceptSection[] = [
       "Premium private-group or partner-driven voyage design",
     ],
     whyMatters:
-      "Custom brand and private voyages expand EmbarqX beyond public themed sailings by creating flexible premium formats for sponsors, brands, private groups, and strategic collaborators seeking exclusivity and tailored experience design.",
+      "Custom brand and private voyages expand EmbarqX™ beyond public themed sailings by creating flexible premium formats for sponsors, brands, private groups, and strategic collaborators seeking exclusivity and tailored experience design.",
     image: privateImg,
     icon: Crown,
   },
@@ -169,7 +169,7 @@ const portfolioStrength = [
   {
     icon: Globe,
     title: "Broader audience reach",
-    text: "Different concepts allow EmbarqX to engage multiple high-affinity communities instead of depending on a single market.",
+    text: "Different concepts allow EmbarqX™ to engage multiple high-affinity communities instead of depending on a single market.",
   },
   {
     icon: Layers,
@@ -214,7 +214,7 @@ const Experiences = () => (
               Premium concepts designed to become unforgettable voyages.
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              EmbarqX builds themed voyage concepts around strong audience identity, curated programming, and premium experience design — creating experiences that feel emotionally resonant, commercially differentiated, and scalable over time.
+              EmbarqX™ builds themed voyage concepts around strong audience identity, curated programming, and premium experience design — creating experiences that feel emotionally resonant, commercially differentiated, and scalable over time.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -242,10 +242,10 @@ const Experiences = () => (
               A portfolio designed for premium demand
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-              Each EmbarqX concept is built around a distinct audience, a clear thematic identity, and the kind of programming that turns a voyage into something people deeply connect with.
+              Each EmbarqX™ concept is built around a distinct audience, a clear thematic identity, and the kind of programming that turns a voyage into something people deeply connect with.
             </p>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
-              Rather than depending on a single idea or one narrow audience, EmbarqX is designed as a diversified concept platform with multiple thematic lanes capable of attracting strong emotional demand and broader long-term value.
+              Rather than depending on a single idea or one narrow audience, EmbarqX™ is designed as a diversified concept platform with multiple thematic lanes capable of attracting strong emotional demand and broader long-term value.
             </p>
           </motion.div>
 
@@ -448,7 +448,7 @@ const Experiences = () => (
               The right concept can become much more than a single voyage
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
-              EmbarqX is designed to turn differentiated premium concepts into experiences with stronger audience connection, broader commercial potential, and long-term platform value.
+              EmbarqX™ is designed to turn differentiated premium concepts into experiences with stronger audience connection, broader commercial potential, and long-term platform value.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -461,7 +461,7 @@ const Experiences = () => (
                 to="/partners"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-body font-semibold tracking-wide hover:bg-muted/40 transition-colors"
               >
-                Partner With EmbarqX
+                Partner With EmbarqX™
               </Link>
             </div>
           </motion.div>

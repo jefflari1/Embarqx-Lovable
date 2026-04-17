@@ -71,7 +71,7 @@ const Contact = () => {
       setIsSubmitting(false);
       toast({
         title: "Inquiry received",
-        description: "Thank you. EmbarqX will review your inquiry and respond if there is strategic alignment.",
+        description: "Thank you. EmbarqX™ will review your inquiry and respond if there is strategic alignment.",
       });
       (e.target as HTMLFormElement).reset();
       setSelectedType("");
@@ -100,14 +100,14 @@ const Contact = () => {
                 Built for thoughtful introductions and serious opportunities.
               </h1>
               <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-                EmbarqX is designed for the right operators, investors, sponsors, talent-side partners, and strategic collaborators who see the value of premium experiences built with long-term vision.
+                EmbarqX™ is designed for the right operators, investors, sponsors, talent-side partners, and strategic collaborators who see the value of premium experiences built with long-term vision.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" onClick={scrollToForm} className="font-body text-base px-8 py-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90">
                   Start the Conversation <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button asChild variant="outline" size="lg" className="font-body text-base px-8 py-6 rounded-lg border-border text-foreground hover:bg-secondary/40">
-                  <Link to="/partners">Partner With EmbarqX</Link>
+                  <Link to="/partners">Partner With EmbarqX™</Link>
                 </Button>
               </div>
             </motion.div>
@@ -121,9 +121,9 @@ const Contact = () => {
         >
           <div className="container mx-auto px-6">
             <motion.div className="max-w-3xl mx-auto text-center" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeUp} custom={0}>
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">How to connect with EmbarqX</h2>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">How to connect with EmbarqX™</h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-12">
-                If there is a strategic fit, the best next step is a thoughtful conversation. Select the inquiry type that best matches your role so EmbarqX can better understand what you are looking to explore.
+                If there is a strategic fit, the best next step is a thoughtful conversation. Select the inquiry type that best matches your role so EmbarqX™ can better understand what you are looking to explore.
               </p>
             </motion.div>
             <motion.div
@@ -172,7 +172,7 @@ const Contact = () => {
                 Built for the right kinds of introductions
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                EmbarqX is designed for partners and collaborators who see the value of differentiated experiences and lasting platform potential.
+                EmbarqX™ is designed for partners and collaborators who see the value of differentiated experiences and lasting platform potential.
               </p>
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -279,7 +279,7 @@ const Contact = () => {
                   <Label className="font-body text-sm font-medium" style={{ color: "hsl(212 60% 7%)" }}>Message *</Label>
                   <Textarea
                     required name="message" rows={5}
-                    placeholder="Share a brief overview of your interest and what you'd like to explore with EmbarqX."
+                    placeholder="Share a brief overview of your interest and what you'd like to explore with EmbarqX™."
                     className="bg-white border-[hsl(210_20%_80%)] text-[hsl(212_60%_7%)] placeholder:text-[hsl(210_15%_60%)] focus-visible:ring-primary resize-none"
                   />
                 </div>
@@ -356,7 +356,7 @@ const Contact = () => {
               className="font-body text-base text-muted-foreground text-center max-w-2xl mx-auto leading-relaxed"
               initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeUp} custom={2}
             >
-              EmbarqX values quality over volume. The strongest conversations happen when there is genuine alignment around concept, partnership potential, and long-term vision.
+              EmbarqX™ values quality over volume. The strongest conversations happen when there is genuine alignment around concept, partnership potential, and long-term vision.
             </motion.p>
           </div>
         </section>
@@ -373,14 +373,14 @@ const Contact = () => {
                 The right conversation can shape what comes next
               </h2>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
-                EmbarqX is designed for the right partners, investors, operators, brands, and collaborators who believe premium experiences can become much more than one-time moments when they are built with strong concepts and aligned vision.
+                EmbarqX™ is designed for the right partners, investors, operators, brands, and collaborators who believe premium experiences can become much more than one-time moments when they are built with strong concepts and aligned vision.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" onClick={scrollToForm} className="font-body text-base px-8 py-6 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90">
                   Start the Conversation <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button asChild variant="outline" size="lg" className="font-body text-base px-8 py-6 rounded-lg border-border text-foreground hover:bg-secondary/40">
-                  <Link to="/partners">Partner With EmbarqX</Link>
+                  <Link to="/partners">Partner With EmbarqX™</Link>
                 </Button>
               </div>
             </motion.div>

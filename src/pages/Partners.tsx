@@ -64,12 +64,12 @@ const Partners = () => {
                 Partnerships That Create Long-Term Value at Sea
               </h1>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-5">
-                EmbarqX is built to align the right operators, investors,
+                EmbarqX™ is built to align the right operators, investors,
                 sponsors, and talent-side collaborators around premium voyage
                 concepts with long-term strategic value.
               </p>
               <p className="font-body text-base text-muted-foreground/90 leading-relaxed mb-10">
-                By bringing together the right mix of partners, EmbarqX is
+                By bringing together the right mix of partners, EmbarqX™ is
                 positioned to create differentiated voyages that carry stronger
                 audience identity, greater cultural relevance, and broader
                 commercial potential over time.
@@ -109,7 +109,7 @@ const Partners = () => {
                 Built for the Right Partners
               </h2>
               <p className="font-body text-lg text-[hsl(212,25%,35%)] leading-relaxed mb-5">
-                EmbarqX is designed to work with the right operators, investors,
+                EmbarqX™ is designed to work with the right operators, investors,
                 sponsors, and talent-side partners who see the opportunity to
                 create premium experiences with lasting commercial potential.
               </p>
@@ -117,7 +117,7 @@ const Partners = () => {
                 The strongest themed voyages are not built in isolation. They are
                 built by aligning execution, audience, talent, programming, and
                 commercial strategy into one coherent platform. That is where
-                EmbarqX creates value.
+                EmbarqX™ creates value.
               </p>
             </motion.div>
 

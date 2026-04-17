@@ -63,7 +63,7 @@ const Footer = () => (
 
       <div className="mt-16 pt-8 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-[#8D9AA8] text-xs">
-          © {new Date().getFullYear()} EmbarqX. All rights reserved.
+          © {new Date().getFullYear()} EmbarqX™. All rights reserved.
         </p>
         <p className="text-[#8D9AA8] text-xs">
           Premium Themed Experiences at Sea
