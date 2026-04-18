@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import musicImg from "@/assets/music-voyage.jpg";
 import gamingImg from "@/assets/gaming.jpg";
 import wellnessImg from "@/assets/wellness.jpg";
-import theaterImg from "@/assets/theater.jpg";
+import sportsLegendsImg from "@/assets/sports-legends.jpg";
 import deckImg from "@/assets/deck-nightlife.jpg";
 
 const concepts = [
@@ -13,7 +13,7 @@ const concepts = [
     description: "Centered around iconic athletes, immersive fan engagement, and curated access, these voyages are designed to create premium experiences that blend entertainment, community, and high-value sponsorship potential.",
     audience: "Global sports fans, athlete-driven communities, and premium travelers seeking immersive access and shared passion at sea.",
     opportunity: "Create premium sports experiences that combine immersive fan engagement, sponsorship potential, and strong emotional demand around iconic athletes and shared passion.",
-    image: theaterImg,
+    image: sportsLegendsImg,
   },
   {
     title: "Poker & Gaming Voyages",
